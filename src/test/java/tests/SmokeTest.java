@@ -31,16 +31,12 @@ public class SmokeTest {
 	public WebDriver driver;
 	public SoftAssert sa;
 	
-	public LoginPage login; 
-	public Navigation navigation;
-	public Drafts drafts;
-	public Sent sent;
-	public Inbox inbox;
-	public Spam spam;
-	public Trash trash;	
-	public Message message;
-	public RegisterPage regPage;	 
+	public Registration regPage;	 
 	public ConfirmationPage confirm;
+	public Login login; 
+	public Navigation navigation;	
+	public Folder inbox, drafts, sent, spam, trash;
+	public Message message;	
 	
 	@BeforeClass
 	public void setup() {
@@ -49,14 +45,14 @@ public class SmokeTest {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 				
-		regPage = new RegisterPage(driver);
-		login = new LoginPage(driver);
+		regPage = new Registration(driver);
+		login = new Login(driver);
 		navigation = new Navigation(driver);		
-		inbox = new Inbox(driver);
-		drafts = new Drafts(driver);
-		sent = new Sent(driver);
-		spam = new Spam(driver);
-		trash = new Trash(driver);		
+		inbox = new Folder(driver);
+		drafts = new Folder(driver);
+		sent = new Folder(driver);
+		spam = new Folder(driver);
+		trash = new Folder(driver);		
 		message = new Message(driver);		
 	}	
 		
@@ -170,8 +166,9 @@ public class SmokeTest {
 		loginWithValidData();
 		navigation.newMsg();
 		setMessage(testSubj,sampleText);		
-		navigation.goToFolder(drafts).openMsgWithSubject(testSubj);		
-		sa.assertEquals(message.bodyEditor.getText(), sampleText);
+		navigation.goToDrafts();
+		drafts.openMsgWithSubject(testSubj);		
+		sa.assertEquals(message.bodyEditor.getText(), sampleText,"Mismatch between actual and draft bodytext!");
 		navigation.logout();
 		sa.assertAll();
 	}	
@@ -184,8 +181,9 @@ public class SmokeTest {
 			setMessage(testSubj+"-"+i,sampleText);
 			message.send();
 		}
-		navigation.goToFolder(sent).openAnyFromList();		
-		sa.assertEquals(message.body.getText(), sampleText);
+		navigation.goToSent();
+		sent.openAnyFromList();		
+		sa.assertEquals(message.body.getText(), sampleText,"Mismatch between actual and sent bodytext!");
 		navigation.logout();
 		sa.assertAll();
 		
@@ -194,8 +192,9 @@ public class SmokeTest {
 	@Test (description = "As a User I can open inbox message from list")//, dependsOnMethods = "testSendMessage")
 	public void testOpenInboxMessage() {
 		loginWithValidData();
-		navigation.goToFolder(inbox).openMsgWithSubject(testSubj);		
-		sa.assertEquals(message.body.getText(), sampleText);
+		navigation.goToInbox();
+		inbox.openMsgWithSubject(testSubj);		
+		sa.assertEquals(message.body.getText(), sampleText,"Text mismatch between sent/inbox message body!");
 		navigation.logout();
 		sa.assertAll();
 	}	
@@ -203,14 +202,17 @@ public class SmokeTest {
 	@Test (description = "As a User I can reply to inbox message")//, dependsOnMethods = "testOpenInboxMessage")
 	public void testReplyToMessage() {
 		loginWithValidData();
-		navigation.goToFolder(inbox).openMsgWithSubject(testSubj);			
+		navigation.goToInbox();
+		inbox.openMsgWithSubject(testSubj);			
 		message.reply().setBodyText(replyText).send();
 		
-		navigation.goToFolder(sent).openMsgWithSubject("Re: "+testSubj);			
-		sa.assertTrue(message.body.getText().contains(replyText));
+		navigation.goToSent();
+		sent.openMsgWithSubject("Re: "+testSubj);			
+		sa.assertTrue(message.body.getText().contains(replyText),"Reply text is not found inside Re: message!");
 		
-		navigation.goToFolder(inbox).openMsgWithSubject("Re: "+testSubj);			
-		sa.assertTrue(message.body.getText().contains(replyText));		
+		navigation.goToInbox();
+		inbox.openMsgWithSubject("Re: "+testSubj);			
+		sa.assertTrue(message.body.getText().contains(replyText),"Reply text is not found inside Re: message!");		
 		navigation.logout();
 		sa.assertAll();
 	}
@@ -218,12 +220,14 @@ public class SmokeTest {
 	@Test (description = "As a User I can forward inbox message")//, dependsOnMethods = "testOpenInboxMessage")
 	public void testForwardInboxMessage() {
 		loginWithValidData();
-		navigation.goToFolder(inbox).openMsgWithSubject(testSubj);				
+		navigation.goToInbox();
+		inbox.openMsgWithSubject(testSubj);				
 		String bodyText = message.body.getText();
 		
 		message.forwardTo(validLogin+"@ukr.net").send();
-		navigation.goToFolder(sent).openMsgWithSubject("Fw: "+testSubj);
-		sa.assertTrue(message.body.getText().contains(bodyText));
+		navigation.goToSent();
+		sent.openMsgWithSubject("Fw: "+testSubj);
+		sa.assertTrue(message.body.getText().contains(bodyText), "Original text is not found inside Forwarded message!");
 		
 		navigation.logout();
 		sa.assertAll();
@@ -232,10 +236,12 @@ public class SmokeTest {
 	@Test (description = "As a User I can delete inbox message to Trash while it's opened)")//, dependsOnMethods = "testForwardMessage")
 	public void testReadAndMoveToTrash() {
 		loginWithValidData();
-		navigation.goToFolder(inbox).openAnyFromList();	
+		navigation.goToInbox();
+		inbox.openAnyFromList();	
 		message.moveToTrash();
-		navigation.goToFolder(trash).openMessage(inbox.msgId);
-		sa.assertEquals(message.subject.getText(), inbox.msgSubj,"subject of original/deleted message is not the same!");
+		navigation.goToTrash();
+		trash.openMessage(inbox.msgId);
+		sa.assertEquals(message.subject.getText(), inbox.msgSubj,"Mismatch of Subject in original/deleted message!");
 		navigation.logout();
 		sa.assertAll();
 	}	
@@ -243,10 +249,11 @@ public class SmokeTest {
 	@Test (description = "As a User I can move a message to Trash strait from Inbox-list ")//, dependsOnMethods = "")
 	public void testMoveToTrashFromInboxList() {
 		loginWithValidData();
-		navigation.goToFolder(inbox).selectAnyFromList();
+		navigation.goToInbox();
+		inbox.selectAnyFromList();
 		inbox.moveSelectedToTrash();				
-		navigation.goToFolder(trash);
-		sa.assertFalse(trash.getMessageWithId(inbox.msgId).isDisplayed(), "testMoveToTrashFromInboxList failed");
+		navigation.goToTrash();
+		sa.assertTrue(trash.getMessageWithId(inbox.msgId).isDisplayed(), "Deleted message not found in Trash!");
 		navigation.logout();
 		sa.assertAll();
 	}
@@ -254,10 +261,11 @@ public class SmokeTest {
 	@Test (description = "As a User I can recover message from Trash-list back to Inbox")//, dependsOnMethods = "testForwardMessage")
 	public void testRecoverFromTrashToInbox() {
 		loginWithValidData();		
-		navigation.goToFolder(trash).selectAnyFromList();
+		navigation.goToTrash();
+		trash.selectAnyFromList();
 		trash.moveSelectedToInbox();				
-		navigation.goToFolder(inbox);
-		sa.assertTrue(inbox.getMessageWithId(trash.msgID).isDisplayed());
+		navigation.goToInbox();
+		sa.assertTrue(inbox.getMessageWithId(trash.msgId).isDisplayed(), "Recovered message not found inside Inbox!");
 		navigation.logout();
 		sa.assertAll();
 	}

@@ -40,29 +40,24 @@ public class Navigation extends BaseClass {
 		super(driver);	
 	}	
 	
-	public Inbox goToFolder(Inbox inbox){
-		inboxLink.click();
-		return inbox;
+	public void goToInbox(){
+		inboxLink.click();		
 	}
 	
-	public Drafts goToFolder(Drafts drafts){
-		draftsLink.click();
-		return drafts;
+	public void goToDrafts(){
+		draftsLink.click();		
 	}
 	
-	public Sent goToFolder(Sent sent){
-		sentLink.click();
-		return sent;
+	public void goToSent(){
+		sentLink.click();		
 	}
 	
-	public Trash goToFolder(Trash trash){
-		trashLink.click();
-		return trash;
+	public void goToTrash(){
+		trashLink.click();		
 	}
 	
-	public Spam goToFolder(Spam spam){
-		spamLink.click();
-		return spam;
+	public void goToSpam(){
+		spamLink.click();		
 	}	
 	
 	public void newMsg() {

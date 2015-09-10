@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 4 failed,   9 passed</span>
+                    <span class="method-stats">13 methods, 3 failed,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,22 +101,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testLogin(tester0667804531, p455word, Valid credentials)">testLogin(tester0667804531, p455word, Valid credentials)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testLogin(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее )">testLogin(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее )</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)">testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testLogin(tester0667804531, p455word, Valid credentials)">testLogin(tester0667804531, p455word, Valid credentials)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testMoveToTrashFromInboxList">testMoveToTrashFromInboxList</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testReadAndMoveToTrash">testReadAndMoveToTrash</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -145,12 +140,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testOpenInboxMessage">testOpenInboxMessage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)">testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testReadAndMoveToTrash">testReadAndMoveToTrash</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testMoveToTrashFromInboxList">testMoveToTrashFromInboxList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="testOpenInboxMessage">testOpenInboxMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -193,13 +193,28 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testLogin(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее )">
+                  </a> <!-- testLogin(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее ) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее )</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]
+	at tests.SmokeTest.testLogin(SmokeTest.java:161)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(As a User I can login only with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testLogin(tester0667804531, p455word, Valid credentials)">
                   </a> <!-- testLogin(tester0667804531, p455word, Valid credentials) -->
                   <span class="method-name">testLogin</span>
                   <span class="parameters">(tester0667804531, p455word, Valid credentials)</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 Inbox folder link is missing! expected [false] but found [true]
-	at tests.SmokeTest.testLogin(SmokeTest.java:165)
+	at tests.SmokeTest.testLogin(SmokeTest.java:161)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -208,96 +223,16 @@ Inbox folder link is missing! expected [false] but found [true]
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее )">
-                  </a> <!-- testLogin(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее ) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее )</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[href*=\&quot;lang=ru\&quot;]&quot;}
-Command duration or timeout: 3.70 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-*** Element info: {Using=css selector, value=[href*=&quot;lang=ru&quot;]}
-Session ID: adda109c-d0ec-4f88-95fb-525a2280eca6
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at pages.LoginPage.setLanguage(LoginPage.java:47)
-	at tests.SmokeTest.testLogin(SmokeTest.java:156)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[href*=\&quot;lang=ru\&quot;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(As a User I can login only with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)">
-                  </a> <!-- testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее) -->
-                  <span class="method-name">testLogin</span>
-                  <span class="parameters">(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[href*=\&quot;lang=ru\&quot;]&quot;}
-Command duration or timeout: 4.67 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-*** Element info: {Using=css selector, value=[href*=&quot;lang=ru&quot;]}
-Session ID: adda109c-d0ec-4f88-95fb-525a2280eca6
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at pages.LoginPage.setLanguage(LoginPage.java:47)
-	at tests.SmokeTest.testLogin(SmokeTest.java:156)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[href*=\&quot;lang=ru\&quot;]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(As a User I can login only with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMoveToTrashFromInboxList">
-                  </a> <!-- testMoveToTrashFromInboxList -->
-                  <span class="method-name">testMoveToTrashFromInboxList</span>
+                  <a name="testReadAndMoveToTrash">
+                  </a> <!-- testReadAndMoveToTrash -->
+                  <span class="method-name">testReadAndMoveToTrash</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-testMoveToTrashFromInboxList failed expected [false] but found [true]
-	at tests.SmokeTest.testMoveToTrashFromInboxList(SmokeTest.java:251)
+Mismatch of Date in original/deleted message! expected [сьогодні, 01:03] but found [test: create new message-3]
+	at tests.SmokeTest.testReadAndMoveToTrash(SmokeTest.java:246)
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(As a User I can move a message to Trash strait from Inbox-list )                  </em>
+(As a User I can delete inbox message to Trash while it's opened))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -337,20 +272,30 @@ testMoveToTrashFromInboxList failed expected [false] but found [true]
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)">
+                  </a> <!-- testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)</span>
+                  <em>
+(As a User I can login only with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMoveToTrashFromInboxList">
+                  </a> <!-- testMoveToTrashFromInboxList -->
+                  <span class="method-name">testMoveToTrashFromInboxList</span>
+                  <em>
+(As a User I can move a message to Trash strait from Inbox-list )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testOpenInboxMessage">
                   </a> <!-- testOpenInboxMessage -->
                   <span class="method-name">testOpenInboxMessage</span>
                   <em>
 (As a User I can open inbox message from list)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testReadAndMoveToTrash">
-                  </a> <!-- testReadAndMoveToTrash -->
-                  <span class="method-name">testReadAndMoveToTrash</span>
-                  <em>
-(As a User I can delete inbox message to Trash while it's opened))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -462,55 +407,55 @@ data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSendMessage')
 data.setCell(0, 2, 'tests.SmokeTest')
-data.setCell(0, 3, 15547);
+data.setCell(0, 3, 15375);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testReplyToMessage')
 data.setCell(1, 2, 'tests.SmokeTest')
-data.setCell(1, 3, 10218);
+data.setCell(1, 3, 12344);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testForwardInboxMessage')
 data.setCell(2, 2, 'tests.SmokeTest')
-data.setCell(2, 3, 7610);
+data.setCell(2, 3, 9062);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testOpenInboxMessage')
+data.setCell(3, 1, 'testCreateMessage')
 data.setCell(3, 2, 'tests.SmokeTest')
-data.setCell(3, 3, 5766);
+data.setCell(3, 3, 7359);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testCreateMessage')
+data.setCell(4, 1, 'testReadAndMoveToTrash')
 data.setCell(4, 2, 'tests.SmokeTest')
-data.setCell(4, 3, 5766);
+data.setCell(4, 3, 5828);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testReadAndMoveToTrash')
+data.setCell(5, 1, 'testOpenInboxMessage')
 data.setCell(5, 2, 'tests.SmokeTest')
-data.setCell(5, 3, 5109);
+data.setCell(5, 3, 5672);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testMoveToTrashFromInboxList')
+data.setCell(6, 1, 'testRecoverFromTrashToInbox')
 data.setCell(6, 2, 'tests.SmokeTest')
-data.setCell(6, 3, 5078);
+data.setCell(6, 3, 5016);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testLogin')
+data.setCell(7, 1, 'testMoveToTrashFromInboxList')
 data.setCell(7, 2, 'tests.SmokeTest')
-data.setCell(7, 3, 4750);
+data.setCell(7, 3, 4906);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testRecoverFromTrashToInbox')
+data.setCell(8, 1, 'testLogin')
 data.setCell(8, 2, 'tests.SmokeTest')
-data.setCell(8, 3, 4563);
+data.setCell(8, 3, 3531);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testLogin')
+data.setCell(9, 1, 'testRegPageEmptyFieldsErrorHandling')
 data.setCell(9, 2, 'tests.SmokeTest')
-data.setCell(9, 3, 4562);
+data.setCell(9, 3, 1563);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testLogin')
+data.setCell(10, 1, 'testCheckRegistrationLinks')
 data.setCell(10, 2, 'tests.SmokeTest')
-data.setCell(10, 3, 3594);
+data.setCell(10, 3, 1531);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testRegPageEmptyFieldsErrorHandling')
+data.setCell(11, 1, 'testLogin')
 data.setCell(11, 2, 'tests.SmokeTest')
-data.setCell(11, 3, 1578);
+data.setCell(11, 3, 1281);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testCheckRegistrationLinks')
+data.setCell(12, 1, 'testLogin')
 data.setCell(12, 2, 'tests.SmokeTest')
-data.setCell(12, 3, 1422);
+data.setCell(12, 3, 1016);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -548,119 +493,117 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">3907 ms</span>
+                <span class="method-start">4359 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRegPageEmptyFieldsErrorHandling</span>
-                <span class="method-start">3907 ms</span>
+                <span class="method-start">4359 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">5485 ms</span>
+                <span class="method-start">5922 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCheckRegistrationLinks</span>
-                <span class="method-start">5485 ms</span>
+                <span class="method-start">5922 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">6922 ms</span>
+                <span class="method-start">7469 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testLogin(tester0667804531, p455word, Valid credentials)</span>
-                <span class="method-start">6922 ms</span>
+                <span class="method-start">7469 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">10516 ms</span>
+                <span class="method-start">11000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testLogin(tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее)</span>
-                <span class="method-start">10516 ms</span>
+                <span class="method-start">11000 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">15266 ms</span>
+                <span class="method-start">12016 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testLogin(wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее )</span>
-                <span class="method-start">15266 ms</span>
+                <span class="method-start">12016 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">19828 ms</span>
+                <span class="method-start">13297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCreateMessage</span>
-                <span class="method-start">19828 ms</span>
+                <span class="method-start">13297 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">25594 ms</span>
+                <span class="method-start">20656 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSendMessage</span>
-                <span class="method-start">25594 ms</span>
+                <span class="method-start">20656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">41141 ms</span>
+                <span class="method-start">36031 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOpenInboxMessage</span>
-                <span class="method-start">41141 ms</span>
+                <span class="method-start">36031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">46907 ms</span>
+                <span class="method-start">41719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testReplyToMessage</span>
-                <span class="method-start">46907 ms</span>
+                <span class="method-start">41719 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">57125 ms</span>
+                <span class="method-start">54063 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testForwardInboxMessage</span>
-                <span class="method-start">57125 ms</span>
+                <span class="method-start">54063 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">64735 ms</span>
+                <span class="method-start">63125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMoveToTrashFromInboxList</span>
+                <span class="method-start">63125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">68031 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testMoveToTrashFromInboxList</span>
-                <span class="method-start">64735 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">69813 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">testReadAndMoveToTrash</span>
-                <span class="method-start">69813 ms</span>
+                <span class="method-start">68031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">74922 ms</span>
+                <span class="method-start">73859 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRecoverFromTrashToInbox</span>
-                <span class="method-start">74922 ms</span>
+                <span class="method-start">73859 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79485 ms</span>
+                <span class="method-start">78875 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

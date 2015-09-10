@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends BaseClass{
+public class Login extends BaseClass{
 	
 	public final String LoginUrl = "https://mail.ukr.net";	
 	public final String pageTitle = "Почта @ ukr.net - украинская электронная почта • Создать емейл";
@@ -29,16 +29,16 @@ public class LoginPage extends BaseClass{
 	@FindBy (linkText = "Умови використання") public WebElement usageTermsLink;
 	@FindBy (linkText = "Мобільна версія") public WebElement mobileVersionLink;
 	
-	public LoginPage(WebDriver driver){
+	public Login(WebDriver driver){
 		super(driver);			
 	}
 	
-	public LoginPage load() {
+	public Login load() {
 		load(LoginUrl);
 		return this;
 	}
 	
-	public LoginPage setLanguage(String lang){
+	public Login setLanguage(String lang){
 		switch(lang){
 		case "UA": 
 			langUALink.click();

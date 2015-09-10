@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class RegisterPage extends BaseClass{
+public class Registration extends BaseClass{
 	
 	public static final String REGISTER_URL = "https://mail.ukr.net/q/reg";
 	
@@ -38,15 +38,15 @@ public class RegisterPage extends BaseClass{
 	@FindBy (css = ".form__error.show") public List<WebElement> errorsList;
 	
 		
-	public RegisterPage(WebDriver driver){
+	public Registration(WebDriver driver){
 		super(driver);	
 	}
 	
-	public RegisterPage load() {
+	public Registration load() {
 		load(REGISTER_URL);
 		return this;
 	}
-	public RegisterPage setLanguage(String lang){
+	public Registration setLanguage(String lang){
 		langMenu.click();
 		switch(lang){
 		case "UA":			
@@ -62,27 +62,27 @@ public class RegisterPage extends BaseClass{
 		return this;
 	}	
 	
-	public RegisterPage setUsername(String string) {
+	public Registration setUsername(String string) {
 		loginField.sendKeys(string);
 		return this;
 	}
 
-	public RegisterPage setPassword(String string) {
+	public Registration setPassword(String string) {
 		passwordField.sendKeys(string);
 		return this;
 	}
 	
-	public RegisterPage setFirstName(String string) {
+	public Registration setFirstName(String string) {
 		fNameField.sendKeys(string);
 		return this;
 	}
 	
-	public RegisterPage setSurName(String string) {
+	public Registration setSurName(String string) {
 		surNameField.sendKeys(string);
 		return this;
 	}
 	
-	public RegisterPage setGender(String string) {
+	public Registration setGender(String string) {
 		switch(string){
 		case "F": 
 			genderFemale.click();
@@ -94,7 +94,7 @@ public class RegisterPage extends BaseClass{
 		return this;
 	}
 		
-	public RegisterPage setDateOfBirth(String day, String month, String year){
+	public Registration setDateOfBirth(String day, String month, String year){
 		bDay.sendKeys(day);
 		bYear.sendKeys(year);
 		bMonthList.click();
@@ -102,12 +102,12 @@ public class RegisterPage extends BaseClass{
 		return this;
 	}
 			
-	public RegisterPage setMobile(String string){
+	public Registration setMobile(String string){
 		mobileNumber.sendKeys(string);
 		return this;
 	}
 	
-	public RegisterPage setEmail(String string){
+	public Registration setEmail(String string){
 		email.sendKeys(string);
 		return this;
 	}
