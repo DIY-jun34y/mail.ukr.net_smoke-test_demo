@@ -5,10 +5,21 @@
     <classes>
       <class name="tests.SmokeTest">
         <methods>
-          <include name="testCheckRegistrationLinks"/>
-          <include name="newSoftAssertObject"/>
+          <include name="testCreateMessage"/>
+          <include name="testForwardInboxMessage"/>
+          <include name="testOpenInboxMessage"/>
           <include name="setup"/>
+          <include name="testReadAndMoveToTrash"/>
+          <include name="testReplyToMessage"/>
+          <include name="testMoveToTrashFromInboxList"/>
+          <include name="testCheckRegistrationLinks"/>
+          <include name="testRegPageEmptyFieldsErrorHandling"/>
+          <include name="newSoftAssertObject"/>
+          <include name="testRecoverFromTrashToInbox"/>
+          <include name="testLogin" invocation-numbers="0 1 2"/>
+          <include name="testSendMessage"/>
           <include name="tearDown"/>
+          <include name="testRegistration"/>
         </methods>
       </class> <!-- tests.SmokeTest -->
     </classes>

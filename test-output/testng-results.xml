@@ -1,29 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="4" total="13" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6375" started-at="2015-09-10T13:37:57Z" finished-at="2015-09-10T13:38:04Z">
+  <suite name="Suite" duration-ms="79937" started-at="2015-09-10T22:03:02Z" finished-at="2015-09-10T22:04:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6375" started-at="2015-09-10T13:37:57Z" finished-at="2015-09-10T13:38:04Z">
+    <test name="Test" duration-ms="79937" started-at="2015-09-10T22:03:02Z" finished-at="2015-09-10T22:04:22Z">
       <class name="tests.SmokeTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="setup" is-config="true" duration-ms="3688" started-at="2015-09-10T16:37:57Z" finished-at="2015-09-10T16:38:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="setup" is-config="true" duration-ms="3907" started-at="2015-09-11T01:03:02Z" finished-at="2015-09-11T01:03:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testCheckRegistrationLinks()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testCheckRegistrationLinks" duration-ms="2328" started-at="2015-09-10T16:38:01Z" description="Registration links should be equal and correct" finished-at="2015-09-10T16:38:03Z">
+        <test-method status="PASS" signature="testRegPageEmptyFieldsErrorHandling()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testRegPageEmptyFieldsErrorHandling" duration-ms="1578" started-at="2015-09-11T01:03:06Z" description="Checking error messages on the Registration page - &#039;Empty fields&#039;" finished-at="2015-09-11T01:03:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCheckRegistrationLinks -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-10T16:38:01Z" finished-at="2015-09-10T16:38:01Z">
+        </test-method> <!-- testRegPageEmptyFieldsErrorHandling -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:06Z" finished-at="2015-09-11T01:03:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="tearDown" is-config="true" duration-ms="343" started-at="2015-09-10T16:38:03Z" finished-at="2015-09-10T16:38:04Z">
+        <test-method status="PASS" signature="testCheckRegistrationLinks()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testCheckRegistrationLinks" duration-ms="1422" started-at="2015-09-11T01:03:07Z" description="Checking registration links on the login page" finished-at="2015-09-11T01:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckRegistrationLinks -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:07Z" finished-at="2015-09-11T01:03:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testLogin" duration-ms="3594" started-at="2015-09-11T01:03:09Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-11T01:03:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester0667804531]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[p455word]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid credentials]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Inbox folder link is missing! expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Inbox folder link is missing! expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.SmokeTest.testLogin(SmokeTest.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:09Z" finished-at="2015-09-11T01:03:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:12Z" finished-at="2015-09-11T01:03:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testLogin" duration-ms="4750" started-at="2015-09-11T01:03:12Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-11T01:03:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester0667804531]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Неверно указан логин или пароль. Подробнее]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"[href*=\"lang=ru\"]"}
+Command duration or timeout: 4.67 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
+*** Element info: {Using=css selector, value=[href*="lang=ru"]}
+Session ID: adda109c-d0ec-4f88-95fb-525a2280eca6
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"[href*=\"lang=ru\"]"}
+Command duration or timeout: 4.67 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
+*** Element info: {Using=css selector, value=[href*="lang=ru"]}
+Session ID: adda109c-d0ec-4f88-95fb-525a2280eca6
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at pages.LoginPage.setLanguage(LoginPage.java:47)
+	at tests.SmokeTest.testLogin(SmokeTest.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"[href*=\"lang=ru\"]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:17Z" finished-at="2015-09-11T01:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testLogin" duration-ms="4562" started-at="2015-09-11T01:03:17Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-11T01:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong_login_name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[p455word]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Неверно указан логин или пароль. Подробнее ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"css selector","selector":"[href*=\"lang=ru\"]"}
+Command duration or timeout: 3.70 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
+*** Element info: {Using=css selector, value=[href*="lang=ru"]}
+Session ID: adda109c-d0ec-4f88-95fb-525a2280eca6
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"[href*=\"lang=ru\"]"}
+Command duration or timeout: 3.70 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
+*** Element info: {Using=css selector, value=[href*="lang=ru"]}
+Session ID: adda109c-d0ec-4f88-95fb-525a2280eca6
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at pages.LoginPage.setLanguage(LoginPage.java:47)
+	at tests.SmokeTest.testLogin(SmokeTest.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"[href*=\"lang=ru\"]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///J:/Temp/anonymous1095432414352362797webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testCreateMessage()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testCreateMessage" duration-ms="5766" started-at="2015-09-11T01:03:22Z" description="As a User I can create a message(it&#039;s stored in Drafts automatically)" finished-at="2015-09-11T01:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:22Z" finished-at="2015-09-11T01:03:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="testSendMessage()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testSendMessage" duration-ms="15547" started-at="2015-09-11T01:03:27Z" description="As a User I can send a message (it&#039;s stored in Sent automatically)" finished-at="2015-09-11T01:03:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSendMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:27Z" finished-at="2015-09-11T01:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:43Z" finished-at="2015-09-11T01:03:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="testOpenInboxMessage()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testOpenInboxMessage" duration-ms="5766" started-at="2015-09-11T01:03:43Z" description="As a User I can open inbox message from list" finished-at="2015-09-11T01:03:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenInboxMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:49Z" finished-at="2015-09-11T01:03:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="testReplyToMessage()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testReplyToMessage" duration-ms="10218" started-at="2015-09-11T01:03:49Z" description="As a User I can reply to inbox message" finished-at="2015-09-11T01:03:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReplyToMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:03:59Z" finished-at="2015-09-11T01:03:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="testForwardInboxMessage()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testForwardInboxMessage" duration-ms="7610" started-at="2015-09-11T01:03:59Z" description="As a User I can forward inbox message" finished-at="2015-09-11T01:04:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForwardInboxMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:04:07Z" finished-at="2015-09-11T01:04:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="testMoveToTrashFromInboxList()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testMoveToTrashFromInboxList" duration-ms="5078" started-at="2015-09-11T01:04:07Z" description="As a User I can move a message to Trash strait from Inbox-list " finished-at="2015-09-11T01:04:12Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+testMoveToTrashFromInboxList failed expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+testMoveToTrashFromInboxList failed expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.SmokeTest.testMoveToTrashFromInboxList(SmokeTest.java:251)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMoveToTrashFromInboxList -->
+        <test-method status="PASS" signature="testReadAndMoveToTrash()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testReadAndMoveToTrash" duration-ms="5109" started-at="2015-09-11T01:04:12Z" description="As a User I can delete inbox message to Trash while it&#039;s opened)" finished-at="2015-09-11T01:04:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReadAndMoveToTrash -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:04:12Z" finished-at="2015-09-11T01:04:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="testRecoverFromTrashToInbox()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="testRecoverFromTrashToInbox" duration-ms="4563" started-at="2015-09-11T01:04:17Z" description="As a User I can recover message from Trash-list back to Inbox" finished-at="2015-09-11T01:04:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRecoverFromTrashToInbox -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-11T01:04:17Z" finished-at="2015-09-11T01:04:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.SmokeTest@bb2f6e]" name="tearDown" is-config="true" duration-ms="437" started-at="2015-09-11T01:04:21Z" finished-at="2015-09-11T01:04:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.SmokeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

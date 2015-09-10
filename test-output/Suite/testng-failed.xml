@@ -6,12 +6,10 @@
       <class name="tests.SmokeTest">
         <methods>
           <include name="testMoveToTrashFromInboxList"/>
-          <include name="testCheckRegistrationLinks"/>
           <include name="newSoftAssertObject"/>
-          <include name="testLogin" invocation-numbers="0 2"/>
+          <include name="testLogin" invocation-numbers="0 1 2"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testRegistration"/>
         </methods>
       </class> <!-- tests.SmokeTest -->
     </classes>

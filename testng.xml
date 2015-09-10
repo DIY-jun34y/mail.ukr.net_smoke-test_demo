@@ -10,14 +10,17 @@
 					<include name="testRegistration"/>
 					 <!-- include name=""/-->
 					<include name="testLogin"/>
-					<include name="testCreateMessage" />
+					<include name="testCreateMessage" />				
 					<include name="testSendMessage" />
 					<include name="testOpenInboxMessage" />
 					<include name="testReplyToMessage" />
 				  	<include name="testForwardInboxMessage" />					
 				   	<include name="testMoveToTrashFromInboxList" />
 				   	<include name="testReadAndMoveToTrash" />				  
-				  	<include name="testRecoverFromTrashToInbox" />				  				
+				  	<include name="testRecoverFromTrashToInbox" />
+					
+					
+									  				
 			</methods>
 		</class>	
     </classes>

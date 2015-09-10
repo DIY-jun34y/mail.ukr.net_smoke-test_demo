@@ -1,8 +1,6 @@
 package helpers;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -10,7 +8,6 @@ import org.testng.annotations.*;
 
 public abstract class BaseClass {
 	
-	public List<WebElement> msgList = null;
 	public WebDriver driver;
 			
 	public BaseClass(WebDriver driver) {
@@ -49,10 +46,6 @@ public abstract class BaseClass {
 	
 	public void implicitlyWait(int sec){
 		driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
-	}
+	}		
 		
-	public void clear() {	}
-
-	public void openMessage(String string) { }	
-	
 }

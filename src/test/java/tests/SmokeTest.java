@@ -98,7 +98,7 @@ public class SmokeTest {
 	}
 	
 		//User can register - skipped - capcha!
-	@Test (description = "UnSuccessful registration")
+	//@Test (description = "UnSuccessful registration")
 	public void testRegistration() {
 		regPage.load()
 		.setLanguage("RU")
@@ -114,11 +114,11 @@ public class SmokeTest {
 		regPage.submitBtn.click();
 		//assert success page is opened...
 		sa.assertEquals(driver.getTitle(), "Регистрация выполнена успешно");
-		sa.assertTrue(confirm.goToMailboxBtn.isDisplayed(), "goToMailbox button is not found!");
+		sa.assertTrue(confirm.goToMailboxBtn.isDisplayed(), " 'go to Mailbox' button is not found!");
 		sa.assertAll();		
 	}
 
-	@Test(description = "Registration links should be equal and correct")
+	@Test(description = "Checking registration links on the login page")
 	public void testCheckRegistrationLinks() {
 		login.load();
 		if (loggedIn()) {navigation.logout();}		
@@ -137,20 +137,18 @@ public class SmokeTest {
 		BufferedReader fileIn = null;
 		try {
 			fileIn = new BufferedReader(new FileReader
-					("Q:/DVDFAB/eclipse/temp/mail.ukr.net/src/helpers/emptyErrorMsgRU.ser"));
+					("src/test/java/helpers/emptyErrorMsgRU.ser"));
 			for (WebElement errMsg : regPage.errorsList) {			
-				sa.assertEquals(errMsg.getText(), fileIn.readLine());
-				//System.out.println(errMsg.getText()+" ? "+fileIn.readLine());			
+				sa.assertEquals(errMsg.getText(), fileIn.readLine());		
 			}
 		} catch (IOException e) { 
 			e.printStackTrace();
 		} finally { 
 			if (fileIn != null) fileIn.close();	
-		}		
+		}
+		sa.assertAll();
 	}
 		
-	//password recovery
-	
 	@Test(description = "As a User I can login only with valid credentials", dataProvider = "login",
 			dataProviderClass =	TestData.class)
 	public void testLogin(String account, String password, String errorMsg) {
@@ -165,10 +163,8 @@ public class SmokeTest {
 			sa.assertEquals(login.loginErrorMsg.getText(), errorMsg, "Something wrong with Error messsage!");
 		}
 		sa.assertAll();
-	}
-			
-	//User can't login with invalid credentials
-	
+	}		
+		
 	@Test(description = "As a User I can create a message(it's stored in Drafts automatically)")
 	public void testCreateMessage() {
 		loginWithValidData();
@@ -188,7 +184,7 @@ public class SmokeTest {
 			setMessage(testSubj+"-"+i,sampleText);
 			message.send();
 		}
-		navigation.goToFolder(sent).openMsgWithSubject(testSubj);		
+		navigation.goToFolder(sent).openAnyFromList();		
 		sa.assertEquals(message.body.getText(), sampleText);
 		navigation.logout();
 		sa.assertAll();
@@ -264,9 +260,22 @@ public class SmokeTest {
 		sa.assertTrue(inbox.getMessageWithId(trash.msgID).isDisplayed());
 		navigation.logout();
 		sa.assertAll();
-	}	
+	}
+}
+
 	/*
-	 * 
+	 * 				<include name="testCheckRegistrationLinks"/>
+					<include name="testRegistration"/>
+					 <!-- include name=""/-->
+					<include name="testLogin"/>
+					<include name="testCreateMessage" />				
+					<include name="testSendMessage" />
+					<include name="testOpenInboxMessage" />
+					<include name="testReplyToMessage" />
+				  	<include name="testForwardInboxMessage" />					
+				   	<include name="testMoveToTrashFromInboxList" />
+				   	<include name="testReadAndMoveToTrash" />				  
+				  	<include name="testRecoverFromTrashToInbox" />
 				  
 	 */
 	
@@ -281,4 +290,4 @@ public class SmokeTest {
 	//As a User I can see a list of inbox messages
 	//As a User I can see a list of sent messages
 	
-}
+	//password recovery}
