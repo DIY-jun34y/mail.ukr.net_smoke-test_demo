@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="4" time="68.376" errors="0" skipped="0" tests="14" name="TestSuite">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="Q:\Java\jre7\bin"/>
+    <property name="java.vm.version" value="24.80-b11"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="Q:\eclipse\projects-mars\mail.ukr.net-smoke-test"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 3"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="Q:\eclipse\projects-mars\mail.ukr.net-smoke-test"/>
+    <property name="java.runtime.version" value="1.7.0_80-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="Q:\Java\jre7\lib\endorsed"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.io.tmpdir" value="J:\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows XP"/>
+    <property name="classworlds.conf" value="Q:\eclipse\projects-mars\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6636976320752904350.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="Q:\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;Q:/Java/jre7/bin/client;Q:/Java/jre7/bin;Q:/Java/jre7/lib/i386;Q:\Python3\;Q:\Python3\Scripts;Q:\Python27\Scripts\;Q:\Python27\;C:\Program Files\ImageMagick-6.8.7-Q16;C:\Program Files\Common Files\Intel\Shared Files\cpp\bin\ia32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\MKVtoolnix;C:\PROGRA~1\DISKEE~1\DISKEE~1\;g:\PHP Developer Pack\system\libs;Q:\Calibre2\;C:\OpenVPN\bin;C:\Program Files\Microsoft\Web Platform Installer\;Q:\Skype\Phone\;Q:\Mozilla Firefox\;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\Pinnacle\Shared Files;C:\Program Files\Pinnacle\Shared Files\Filter;Q:\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="os.version" value="5.1"/>
+    <property name="user.home" value="C:\Documents and Settings\fixxer"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="fixxer"/>
+    <property name="java.class.path" value="/Q:/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.0.20150526-2031/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="java.home" value="Q:\Java\jre7"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="ru"/>
+    <property name="user.language.format" value="uk"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="1.7.0_80"/>
+    <property name="java.ext.dirs" value="Q:\Java\jre7\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="Q:\Java\jre7\lib\resources.jar;Q:\Java\jre7\lib\rt.jar;Q:\Java\jre7\lib\sunrsasign.jar;Q:\Java\jre7\lib\jsse.jar;Q:\Java\jre7\lib\jce.jar;Q:\Java\jre7\lib\charsets.jar;Q:\Java\jre7\lib\jfr.jar;Q:\Java\jre7\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+  </properties>
+  <testcase time="1.657" classname="tests.SmokeTest" name="testRegPageEmptyFieldsErrorHandling"/>
+  <testcase time="1.5" classname="tests.SmokeTest" name="testCheckRegistrationLinks"/>
+  <testcase time="1.5" classname="tests.SmokeTest" name="testRegistration">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at tests.SmokeTest.testRegistration(SmokeTest.java:117)
+</failure>
+  </testcase>
+  <testcase time="4.235" classname="tests.SmokeTest" name="testLogin">
+    <failure message="The following asserts failed:
+Inbox folder link is missing! expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+Inbox folder link is missing! expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.SmokeTest.testLogin(SmokeTest.java:167)
+</failure>
+  </testcase>
+  <testcase time="1.093" classname="tests.SmokeTest" name="testLogin"/>
+  <testcase time="1" classname="tests.SmokeTest" name="testLogin">
+    <failure message="The following asserts failed:
+Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.SmokeTest.testLogin(SmokeTest.java:167)
+</failure>
+  </testcase>
+  <testcase time="5.735" classname="tests.SmokeTest" name="testCreateMessage"/>
+  <testcase time="13.968" classname="tests.SmokeTest" name="testSendMessage"/>
+  <testcase time="5.594" classname="tests.SmokeTest" name="testOpenInboxMessage"/>
+  <testcase time="10.594" classname="tests.SmokeTest" name="testReplyToMessage"/>
+  <testcase time="7.875" classname="tests.SmokeTest" name="testForwardInboxMessage"/>
+  <testcase time="4.703" classname="tests.SmokeTest" name="testMoveToTrashFromInboxList">
+    <failure message="The following asserts failed:
+testMoveToTrashFromInboxList failed expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+testMoveToTrashFromInboxList failed expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.SmokeTest.testMoveToTrashFromInboxList(SmokeTest.java:255)
+</failure>
+  </testcase>
+  <testcase time="4.89" classname="tests.SmokeTest" name="testReadAndMoveToTrash"/>
+  <testcase time="4.032" classname="tests.SmokeTest" name="testRecoverFromTrashToInbox"/>
+</testsuite>
