@@ -7,9 +7,9 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -65,8 +65,8 @@ public class Message extends BaseClass{
 		
 		
 		
-	public Message(WebDriver driver){
-		super(driver);
+	public Message(){
+		PageFactory.initElements(driver, this);
 	}
 	
 	public Message to(String string){

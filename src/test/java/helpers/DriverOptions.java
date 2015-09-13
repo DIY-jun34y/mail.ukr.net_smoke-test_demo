@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
+import com.gargoylesoftware.htmlunit.WebClient;
+
 public abstract class DriverOptions {
 	
 	public static WebDriver getDriver(String string){		
@@ -27,8 +29,15 @@ public abstract class DriverOptions {
 	}
 	
 	private static WebDriver newHtmlUnitDriver() {
-		WebDriver driver = new HtmlUnitDriver(true);
 		//((HtmlUnitDriver) driver).setJavascriptEnabled(true);
+		WebDriver driver = new HtmlUnitDriver(true){
+		@Override
+        protected WebClient getWebClient() {
+            WebClient c = super.getWebClient();
+            c.getCache().setMaxSize(0);
+            return c;
+			}
+		};
 		return driver;
 	}
 

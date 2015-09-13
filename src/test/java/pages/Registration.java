@@ -2,13 +2,13 @@ package pages;
 
 import helpers.BaseClass;
 import java.util.List;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Registration extends BaseClass{
 	
-	public static final String REGISTER_URL = "https://mail.ukr.net/q/reg";
+	public final String Register_URL = "https://mail.ukr.net/q/reg";
 	
 	@FindBy (css = ".language") public WebElement langMenu;
 	@FindBy (css = "[href*=\"lang=uk\"]") public WebElement langUA;
@@ -38,12 +38,12 @@ public class Registration extends BaseClass{
 	@FindBy (css = ".form__error.show") public List<WebElement> errorsList;
 	
 		
-	public Registration(WebDriver driver){
-		super(driver);	
+	public Registration(){
+		PageFactory.initElements(driver, this);	
 	}
 	
 	public Registration load() {
-		load(REGISTER_URL);
+		load(Register_URL);
 		return this;
 	}
 	public Registration setLanguage(String lang){

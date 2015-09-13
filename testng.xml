@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SmokeTest" parallel="false" verbose = "2">
-	<parameter name="browserType" value="Firefox"/>
+	<parameter name="browserType" value="htmlunit"/>
 	<test name="Test" preserve-order="true">
     	<classes>
       		<class name="tests.Test_Login">

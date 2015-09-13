@@ -1,301 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="18" passed="17">
+<testng-results skipped="0" failed="18" total="18" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokeTest" duration-ms="109437" started-at="2015-09-13T15:10:28Z" finished-at="2015-09-13T15:12:17Z">
+  <suite name="SmokeTest" duration-ms="203" started-at="2015-09-13T21:01:29Z" finished-at="2015-09-13T21:01:29Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="109437" started-at="2015-09-13T15:10:28Z" finished-at="2015-09-13T15:12:17Z">
+    <test name="Test" duration-ms="203" started-at="2015-09-13T21:01:29Z" finished-at="2015-09-13T21:01:29Z">
       <class name="tests.Test_Functional_Main">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="setup" is-config="true" duration-ms="2719" started-at="2015-09-13T18:10:43Z" finished-at="2015-09-13T18:10:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="setup" is-config="true" duration-ms="16" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:10:45Z" finished-at="2015-09-13T18:10:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_CreateMessage()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_CreateMessage" duration-ms="8110" started-at="2015-09-13T18:10:45Z" description="As a User I can create a message(it&#039;s stored in Drafts automatically)" finished-at="2015-09-13T18:10:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_CreateMessage -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:10:53Z" finished-at="2015-09-13T18:10:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_SendMessage()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_SendMessage" duration-ms="16562" started-at="2015-09-13T18:10:53Z" description="As a User I can send a message (it&#039;s stored in Sent automatically)" finished-at="2015-09-13T18:11:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_SendMessage -->
-        <test-method status="PASS" signature="test_OpenInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_OpenInboxMessage" duration-ms="3984" started-at="2015-09-13T18:11:10Z" description="As a User I can open inbox message from list" finished-at="2015-09-13T18:11:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_OpenInboxMessage -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:10Z" finished-at="2015-09-13T18:11:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:14Z" finished-at="2015-09-13T18:11:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_ReplyToMessage()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_ReplyToMessage" duration-ms="9016" started-at="2015-09-13T18:11:14Z" description="As a User I can reply to inbox message" finished-at="2015-09-13T18:11:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ReplyToMessage -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:23Z" finished-at="2015-09-13T18:11:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_ForwardInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_ForwardInboxMessage" duration-ms="8016" started-at="2015-09-13T18:11:23Z" description="As a User I can forward inbox message" finished-at="2015-09-13T18:11:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ForwardInboxMessage -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:31Z" finished-at="2015-09-13T18:11:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Read_And_Move_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_Read_And_Move_ToTrash" duration-ms="4343" started-at="2015-09-13T18:11:31Z" description="As a User I can move opened Inbox message to Trash immediately)" finished-at="2015-09-13T18:11:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Read_And_Move_ToTrash -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:35Z" finished-at="2015-09-13T18:11:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Move_FromInboxList_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_Move_FromInboxList_ToTrash" duration-ms="3360" started-at="2015-09-13T18:11:35Z" description="As a User I can move a message to Trash from Inbox-list " finished-at="2015-09-13T18:11:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Move_FromInboxList_ToTrash -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:39Z" finished-at="2015-09-13T18:11:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Recover_FromTrashList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_Recover_FromTrashList_ToInbox" duration-ms="4000" started-at="2015-09-13T18:11:39Z" description="As a User I can recover message from Trash back to Inbox" finished-at="2015-09-13T18:11:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Recover_FromTrashList_ToInbox -->
-        <test-method status="PASS" signature="test_Move_FromInboxList_ToSpam()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_Move_FromInboxList_ToSpam" duration-ms="3828" started-at="2015-09-13T18:11:43Z" description="As a User I can move a message to Spam directly from Inbox" finished-at="2015-09-13T18:11:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Move_FromInboxList_ToSpam -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:43Z" finished-at="2015-09-13T18:11:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Recover_FromSpamList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_Recover_FromSpamList_ToInbox" duration-ms="3953" started-at="2015-09-13T18:11:46Z" description="As a User I can recover message from Spam folder (back to Inbox)" finished-at="2015-09-13T18:11:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Recover_FromSpamList_ToInbox -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:46Z" finished-at="2015-09-13T18:11:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_DragAndDrop_InboxToSpam()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_DragAndDrop_InboxToSpam" duration-ms="4750" started-at="2015-09-13T18:11:50Z" description="As a User I can drag-n-drop selected message from Inbox to Spam folder)" finished-at="2015-09-13T18:11:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_DragAndDrop_InboxToSpam -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:50Z" finished-at="2015-09-13T18:11:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Send_With_Attachment()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="test_Send_With_Attachment" duration-ms="11125" started-at="2015-09-13T18:11:55Z" finished-at="2015-09-13T18:12:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Send_With_Attachment -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:11:55Z" finished-at="2015-09-13T18:11:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.Test_Functional_Main@1afbf49]" name="tearDownClass" is-config="true" duration-ms="390" started-at="2015-09-13T18:12:06Z" finished-at="2015-09-13T18:12:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- tests.Test_Functional_Main -->
-      <class name="tests.Test_Login">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.Test_Login@231e35]" name="setup" is-config="true" duration-ms="3610" started-at="2015-09-13T18:10:28Z" finished-at="2015-09-13T18:10:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@231e35]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:10:32Z" finished-at="2015-09-13T18:10:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@231e35]" name="test_Login" duration-ms="8203" started-at="2015-09-13T18:10:32Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-13T18:10:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tester0667804531]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[p455word]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Valid credentials]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@231e35]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:10:40Z" finished-at="2015-09-13T18:10:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@231e35]" name="test_Login" duration-ms="1234" started-at="2015-09-13T18:10:40Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-13T18:10:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tester0667804531]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrong_pass]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Неверно указан логин или пароль. Подробнее]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login -->
-        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@231e35]" name="test_Login" duration-ms="1078" started-at="2015-09-13T18:10:41Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-13T18:10:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wrong_login_name]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[p455word]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Неверно указан логин или пароль. Подробнее]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@231e35]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:10:41Z" finished-at="2015-09-13T18:10:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.Test_Login@231e35]" name="tearDownClass" is-config="true" duration-ms="375" started-at="2015-09-13T18:10:42Z" finished-at="2015-09-13T18:10:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- tests.Test_Login -->
-      <class name="tests.Test_Registration">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:tests.Test_Registration@136d1d7]" name="setup" is-config="true" duration-ms="2750" started-at="2015-09-13T18:12:07Z" finished-at="2015-09-13T18:12:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testCheckRegistrationLinks()[pri:0, instance:tests.Test_Registration@136d1d7]" name="testCheckRegistrationLinks" duration-ms="2375" started-at="2015-09-13T18:12:09Z" description="Checking registration links on the login page" finished-at="2015-09-13T18:12:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCheckRegistrationLinks -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@136d1d7]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:12:09Z" finished-at="2015-09-13T18:12:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="testRegPageEmptyFieldsErrorHandling()[pri:0, instance:tests.Test_Registration@136d1d7]" name="testRegPageEmptyFieldsErrorHandling" duration-ms="922" started-at="2015-09-13T18:12:12Z" description="Checking error messages on the Registration page - &#039;Empty fields&#039;" finished-at="2015-09-13T18:12:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegPageEmptyFieldsErrorHandling -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@136d1d7]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:12:12Z" finished-at="2015-09-13T18:12:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@136d1d7]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-13T18:12:13Z" finished-at="2015-09-13T18:12:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="FAIL" signature="testRegistration()[pri:0, instance:tests.Test_Registration@136d1d7]" name="testRegistration" duration-ms="4469" started-at="2015-09-13T18:12:13Z" description="(Un)Successful registration" finished-at="2015-09-13T18:12:17Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"css selector","selector":".signup-done__view>button"}
-Command duration or timeout: 3.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
-*** Element info: {Using=css selector, value=.signup-done__view>button}
-Session ID: 91c50f9c-3b8d-4578-9047-49a2251202e7
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]]]>
-            </message>
+        <test-method status="FAIL" signature="test_OpenInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_OpenInboxMessage" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can open inbox message from list" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".signup-done__view>button"}
-Command duration or timeout: 3.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
-*** Element info: {Using=css selector, value=.signup-done__view>button}
-Session ID: 91c50f9c-3b8d-4578-9047-49a2251202e7
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at tests.Test_Registration.testRegistration(Test_Registration.java:79)
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_OpenInboxMessage(Test_Functional_Main.java:107)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -320,23 +43,831 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".signup-done__view>button"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous7697682384041993464webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///J:/Temp/anonymous7697682384041993464webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_OpenInboxMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_Read_And_Move_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_Read_And_Move_ToTrash" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can move opened Inbox message to Trash immediately)" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_Read_And_Move_ToTrash(Test_Functional_Main.java:145)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Read_And_Move_ToTrash -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_CreateMessage()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_CreateMessage" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can create a message(it&#039;s stored in Drafts automatically)" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_CreateMessage(Test_Functional_Main.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CreateMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_SendMessage()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_SendMessage" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can send a message (it&#039;s stored in Sent automatically)" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_SendMessage(Test_Functional_Main.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SendMessage -->
+        <test-method status="FAIL" signature="test_Move_FromInboxList_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_Move_FromInboxList_ToTrash" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can move a message to Trash from Inbox-list " finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_Move_FromInboxList_ToTrash(Test_Functional_Main.java:158)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Move_FromInboxList_ToTrash -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_ForwardInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_ForwardInboxMessage" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can forward inbox message" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_ForwardInboxMessage(Test_Functional_Main.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ForwardInboxMessage -->
+        <test-method status="FAIL" signature="test_ReplyToMessage()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_ReplyToMessage" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can reply to inbox message" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_ReplyToMessage(Test_Functional_Main.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ReplyToMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_Recover_FromTrashList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_Recover_FromTrashList_ToInbox" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can recover message from Trash back to Inbox" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_Recover_FromTrashList_ToInbox(Test_Functional_Main.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Recover_FromTrashList_ToInbox -->
+        <test-method status="FAIL" signature="test_Move_FromInboxList_ToSpam()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_Move_FromInboxList_ToSpam" duration-ms="63" started-at="2015-09-14T00:01:29Z" description="As a User I can move a message to Spam directly from Inbox" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_Move_FromInboxList_ToSpam(Test_Functional_Main.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Move_FromInboxList_ToSpam -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_Send_With_Attachment()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_Send_With_Attachment" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_Send_With_Attachment(Test_Functional_Main.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Send_With_Attachment -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_Recover_FromSpamList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_Recover_FromSpamList_ToInbox" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can recover message from Spam folder (back to Inbox)" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_Recover_FromSpamList_ToInbox(Test_Functional_Main.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Recover_FromSpamList_ToInbox -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_DragAndDrop_InboxToSpam()[pri:0, instance:tests.Test_Functional_Main@1f0c3ef]" name="test_DragAndDrop_InboxToSpam" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can drag-n-drop selected message from Inbox to Spam folder)" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Functional_Main.loginWithValidData(Test_Functional_Main.java:64)
+	at tests.Test_Functional_Main.test_DragAndDrop_InboxToSpam(Test_Functional_Main.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_DragAndDrop_InboxToSpam -->
+      </class> <!-- tests.Test_Functional_Main -->
+      <class name="tests.Test_Login">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Login@1aabda3]" name="setup" is-config="true" duration-ms="32" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@1aabda3]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@1aabda3]" name="test_Login" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-14T00:01:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong_login_name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[p455word]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Неверно указан логин или пароль. Подробнее]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Login.test_Login(Test_Login.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Login -->
+        <test-method status="FAIL" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@1aabda3]" name="test_Login" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-14T00:01:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester0667804531]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Неверно указан логин или пароль. Подробнее]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Login.test_Login(Test_Login.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Login -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@1aabda3]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@1aabda3]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@1aabda3]" name="test_Login" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-14T00:01:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester0667804531]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[p455word]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid credentials]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Login.test_Login(Test_Login.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Login -->
+        <test-method status="FAIL" signature="tearDownSuite()[pri:0, instance:tests.Test_Login@1aabda3]" name="tearDownSuite" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.tearDownSuite(BaseClass.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- tests.Test_Login -->
+      <class name="tests.Test_Registration">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Registration@1cfb84c]" name="setup" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@1cfb84c]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="testCheckRegistrationLinks()[pri:0, instance:tests.Test_Registration@1cfb84c]" name="testCheckRegistrationLinks" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="Checking registration links on the login page" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Login.load(Login.java:38)
+	at tests.Test_Registration.testCheckRegistrationLinks(Test_Registration.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckRegistrationLinks -->
+        <test-method status="FAIL" signature="testRegistration()[pri:0, instance:tests.Test_Registration@1cfb84c]" name="testRegistration" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="(Un)Successful registration" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Registration.load(Registration.java:46)
+	at tests.Test_Registration.testRegistration(Test_Registration.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.Test_Registration@136d1d7]" name="tearDownClass" is-config="true" duration-ms="203" started-at="2015-09-13T18:12:17Z" finished-at="2015-09-13T18:12:17Z">
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@1cfb84c]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@1cfb84c]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T00:01:29Z" finished-at="2015-09-14T00:01:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="FAIL" signature="testRegPageEmptyFieldsErrorHandling()[pri:0, instance:tests.Test_Registration@1cfb84c]" name="testRegPageEmptyFieldsErrorHandling" duration-ms="0" started-at="2015-09-14T00:01:29Z" description="Checking error messages on the Registration page - &#039;Empty fields&#039;" finished-at="2015-09-14T00:01:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helpers.BaseClass.load(BaseClass.java:34)
+	at pages.Registration.load(Registration.java:46)
+	at tests.Test_Registration.testRegPageEmptyFieldsErrorHandling(Test_Registration.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegPageEmptyFieldsErrorHandling -->
       </class> <!-- tests.Test_Registration -->
     </test> <!-- Test -->
   </suite> <!-- SmokeTest -->

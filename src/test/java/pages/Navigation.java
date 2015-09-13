@@ -1,9 +1,10 @@
 package pages;
 
 import helpers.BaseClass;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Navigation extends BaseClass {
 	
@@ -36,33 +37,33 @@ public class Navigation extends BaseClass {
 	@FindBy (css = "[href*=\"password\"]") public WebElement changePasswordLink;	//Смена пароля
 		
 					
-	public Navigation(WebDriver driver){
-		super(driver);	
+	public Navigation(){		
+		PageFactory.initElements(driver, this);
 	}	
 	
 	public Folder goToInbox(){
 		inboxLink.click();
-		return new Folder(driver);
+		return new Folder();
 	}
 	
 	public Folder goToDrafts(){
 		draftsLink.click();
-		return new Folder(driver);
+		return new Folder();
 	}
 	
 	public Folder goToSent(){
 		sentLink.click();
-		return new Folder(driver);
+		return new Folder();
 	}
 	
 	public Folder goToTrash(){
 		trashLink.click();
-		return new Folder(driver);
+		return new Folder();
 	}
 	
 	public Folder goToSpam(){
 		spamLink.click();
-		return new Folder(driver);
+		return new Folder();
 	}	
 	
 	public void newMessage() {

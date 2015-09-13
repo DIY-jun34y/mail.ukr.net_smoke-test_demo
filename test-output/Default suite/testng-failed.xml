@@ -5,11 +5,12 @@
     <classes>
       <class name="tests.Test_Registration">
         <methods>
+          <include name="tearDownSuite"/>
           <include name="setup"/>
           <include name="newSoftAssertObject"/>
-          <include name="tearDownSuite"/>
-          <include name="testRegistration"/>
           <include name="tearDownClass"/>
+          <include name="setupDriver"/>
+          <include name="testRegistration"/>
         </methods>
       </class> <!-- tests.Test_Registration -->
     </classes>

@@ -2,9 +2,9 @@ package pages;
 
 import helpers.BaseClass;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class ConfirmationPage extends BaseClass{
 
@@ -18,8 +18,8 @@ public class ConfirmationPage extends BaseClass{
 	@FindBy (css = "[href*=\"lang=ru\"]") public WebElement langRU;
 	@FindBy (css = "[href*=\"lang=en\"]") public WebElement langENG;
 	
-	public ConfirmationPage(WebDriver driver){
-		super(driver);	
+	public ConfirmationPage(){
+		PageFactory.initElements(driver, this);	
 	}
 
 }

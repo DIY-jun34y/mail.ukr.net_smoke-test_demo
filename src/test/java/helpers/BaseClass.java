@@ -3,22 +3,35 @@ package helpers;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.*;
 
 public abstract class BaseClass {
 	
-	public WebDriver driver;
-			
+	public static WebDriver driver;
+	/*
 	public BaseClass(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}	
+	*/	
 	
-	//@BeforeSuite
+	@Parameters({"browserType"})
+	@BeforeSuite
+	private void setupDriver(@Optional("Firefox") String browserType){
+		if (driver==null){
+			driver = DriverOptions.getDriver(browserType);	
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		}		
+	}	
+		
+	@AfterSuite
+	public void tearDownSuite() throws Exception {	    
+		driver.quit();
+	}
 	
 	public void load(String url){
-	 	driver.get(url);
-		//implicitlyWait(3);
+	 	driver.get(url);		
 	}
 	
 	public WebElement hoover(WebElement element){

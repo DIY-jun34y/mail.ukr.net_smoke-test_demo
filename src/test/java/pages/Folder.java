@@ -4,9 +4,9 @@ import java.util.List;
 
 import helpers.BaseClass;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Folder extends BaseClass{
 	
@@ -38,8 +38,8 @@ public class Folder extends BaseClass{
 	public String msgDate;
 	public String msgSubj;
 		
-	public Folder(WebDriver driver){
-		super(driver);			
+	public Folder(){
+		PageFactory.initElements(driver, this);			
 	}	
 
 	public void moveItToTrash() {
@@ -107,7 +107,5 @@ public class Folder extends BaseClass{
 		msgDate = driver.findElement(By.cssSelector(".readmsg__head-date")).getText();
 		msgSubj = driver.findElement(By.cssSelector(".readmsg__subject")).getText();		
 	}
-
-	
 	
 }

@@ -1,16 +1,14 @@
 package tests;
 
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.*;
-import helpers.DriverOptions;
+import helpers.BaseClass;
 import static tests.Test_Login.validLogin;
 import static tests.Test_Login.validPass;
 
-public class Test_Functional_Main {
+public class Test_Functional_Main extends BaseClass{
 	
 	public static final String testSubj = "test: new message";
 	public static final	String attachmentPath = "Q:\\DVDFAB\\Kaner_JobsRev6.pdf";
@@ -23,7 +21,6 @@ public class Test_Functional_Main {
 			+ " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
 			+ "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 	
-	public WebDriver driver;
 	public SoftAssert sa;
 	
 	public Login login; 
@@ -31,40 +28,24 @@ public class Test_Functional_Main {
 	public Folder inbox, drafts, sent, spam, trash;
 	public Message message;	
 	
-	
-	@Parameters({"browserType"})
 	@BeforeClass
-	public void setup(@Optional("Firefox") String browserType) {
-		driver = DriverOptions.getDriver(browserType);	
-		//driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);	
-		login = new Login(driver);
-		navigation = new Navigation(driver);		
-		inbox = new Folder(driver);
-		drafts = new Folder(driver);
-		sent = new Folder(driver);
-		spam = new Folder(driver);
-		trash = new Folder(driver);		
-		message = new Message(driver);	
+	public void setup() {
+		
+		login = new Login();
+		navigation = new Navigation();		
+		inbox = new Folder();
+		drafts = new Folder();
+		sent = new Folder();
+		spam = new Folder();
+		trash = new Folder();		
+		message = new Message();	
 	}	
 		
 	@BeforeMethod
 	private void newSoftAssertObject(){
 		this.sa = new SoftAssert();			
 	}
-	
-	//@AfterMethod
-	private void logout_(){
-		navigation.logout();
-	}
-	
-		
-	@AfterClass
-	public void tearDownClass() throws Exception {	    
-		driver.quit();
-	}
-	
+			
 	private boolean loggedIn(){
 		String pageTitle = driver.getTitle();
 		if (pageTitle.contains(validLogin+"@ukr.net")) {
@@ -249,8 +230,7 @@ public class Test_Functional_Main {
 	/*
 	 * 									  			
 					 <!-- include name=""/-->
-								 
-						
+										
 					
 				  	<include name=""/>
 				  	<include name=""/>
@@ -260,9 +240,7 @@ public class Test_Functional_Main {
 					 <!-- include name=""/-->		
 				  
 	 */
-	
-	
-	//As a User I can attach small file (up to 10MB) to a message
+		
 	//prev-next message
 		
 //DB:

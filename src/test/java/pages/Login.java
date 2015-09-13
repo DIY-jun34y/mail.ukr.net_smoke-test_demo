@@ -2,9 +2,9 @@ package pages;
 
 import helpers.BaseClass;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Login extends BaseClass{
 	
@@ -28,8 +28,10 @@ public class Login extends BaseClass{
 	@FindBy (linkText = "Умови використання") public WebElement usageTermsLink;
 	@FindBy (linkText = "Мобільна версія") public WebElement mobileVersionLink;
 	
-	public Login(WebDriver driver){
-		super(driver);			
+	public Login(){
+		//super(driver);WebDriver driver
+		//this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public Login load() {

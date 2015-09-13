@@ -3,40 +3,32 @@ package tests;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
+import helpers.BaseClass;
+
 import static tests.Test_Login.validLogin;
-import helpers.DriverOptions;
 import pages.*;
 
 
-public class Test_Registration {
+public class Test_Registration extends BaseClass{
 	
-	public WebDriver driver;
 	public SoftAssert sa;
-
 	public Registration regPage;	 
 	public ConfirmationPage confirm;
 	public Login login; 
 	public Navigation navigation;
 		
-	@Parameters({"browserType"})
+	
 	@BeforeClass
-	public void setup(@Optional("Firefox") String browserType) {
-		driver = DriverOptions.getDriver(browserType);	
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-				
-		regPage = new Registration(driver);
-		confirm = new ConfirmationPage(driver);
-		login = new Login(driver);
-		navigation = new Navigation(driver);
+	public void setup() {			
+		regPage = new Registration();
+		confirm = new ConfirmationPage();
+		login = new Login();
+		navigation = new Navigation();
 			
 	}	
 		
@@ -44,12 +36,7 @@ public class Test_Registration {
 	public void newSoftAssertObject(){
 		this.sa = new SoftAssert();			
 	}
-		
-	@AfterClass
-	public void tearDownClass() throws Exception {	    
-		driver.quit();
-	}	
-	
+			
 	public boolean loggedIn(){
 		String pageTitle = driver.getTitle();
 		if (pageTitle.contains(validLogin+"@ukr.net")) {
