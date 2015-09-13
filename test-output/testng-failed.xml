@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="2" name="Failed suite [SmokeTest]">
-  <parameter name="browserType" value="htmlunit"/>
+  <parameter name="browserType" value="firefox"/>
   <test name="Test(failed)">
     <classes>
       <class name="tests.Test_Login">
         <methods>
           <include name="tearDownSuite"/>
-          <include name="test_Login" invocation-numbers="0 1 2"/>
           <include name="newSoftAssertObject"/>
           <include name="setup"/>
+          <include name="setupDriver"/>
         </methods>
       </class> <!-- tests.Test_Login -->
       <class name="tests.Test_Functional_Main">
         <methods>
-          <include name="test_Recover_FromTrashList_ToInbox"/>
-          <include name="test_OpenInboxMessage"/>
-          <include name="setup"/>
-          <include name="test_ReplyToMessage"/>
-          <include name="test_Recover_FromSpamList_ToInbox"/>
-          <include name="test_CreateMessage"/>
-          <include name="test_Move_FromInboxList_ToSpam"/>
-          <include name="test_Move_FromInboxList_ToTrash"/>
-          <include name="test_SendMessage"/>
           <include name="newSoftAssertObject"/>
-          <include name="test_DragAndDrop_InboxToSpam"/>
-          <include name="test_Send_With_Attachment"/>
-          <include name="test_ForwardInboxMessage"/>
-          <include name="test_Read_And_Move_ToTrash"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- tests.Test_Functional_Main -->
       <class name="tests.Test_Registration">
@@ -35,8 +23,6 @@
           <include name="setup"/>
           <include name="newSoftAssertObject"/>
           <include name="testRegistration"/>
-          <include name="testCheckRegistrationLinks"/>
-          <include name="testRegPageEmptyFieldsErrorHandling"/>
         </methods>
       </class> <!-- tests.Test_Registration -->
     </classes>

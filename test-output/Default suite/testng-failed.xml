@@ -8,7 +8,6 @@
           <include name="tearDownSuite"/>
           <include name="setup"/>
           <include name="newSoftAssertObject"/>
-          <include name="tearDownClass"/>
           <include name="setupDriver"/>
           <include name="testRegistration"/>
         </methods>

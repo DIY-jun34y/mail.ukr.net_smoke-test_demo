@@ -29,13 +29,11 @@ public class Login extends BaseClass{
 	@FindBy (linkText = "Мобільна версія") public WebElement mobileVersionLink;
 	
 	public Login(){
-		//super(driver);WebDriver driver
-		//this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
 	public Login load() {
-		load(LoginURL);
+		openPage(LoginURL);
 		return this;
 	}
 	

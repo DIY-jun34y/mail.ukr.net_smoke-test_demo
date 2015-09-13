@@ -115,7 +115,7 @@ public class Message extends BaseClass{
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
-		Thread.sleep(1000);
+		Thread.sleep(1500);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);		
 		wait.until(ExpectedConditions.visibilityOf(attachmentIcon));

@@ -17,7 +17,7 @@ public abstract class BaseClass {
 	
 	@Parameters({"browserType"})
 	@BeforeSuite
-	private void setupDriver(@Optional("Firefox") String browserType){
+	public void setupDriver(@Optional("Firefox") String browserType){
 		if (driver==null){
 			driver = DriverOptions.getDriver(browserType);	
 			driver.manage().window().maximize();
@@ -30,7 +30,7 @@ public abstract class BaseClass {
 		driver.quit();
 	}
 	
-	public void load(String url){
+	public void openPage(String url){
 	 	driver.get(url);		
 	}
 	

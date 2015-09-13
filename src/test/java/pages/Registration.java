@@ -43,7 +43,7 @@ public class Registration extends BaseClass{
 	}
 	
 	public Registration load() {
-		load(Register_URL);
+		openPage(Register_URL);
 		return this;
 	}
 	public Registration setLanguage(String lang){

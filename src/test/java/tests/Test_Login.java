@@ -12,15 +12,13 @@ public class Test_Login extends BaseClass{
 	
 	public static final String validLogin = "tester0667804531";
 	public static final String validPass = "p455word";
-	//private WebDriver driver;
 	private Login login; 
 	private Navigation navigation;
 	private SoftAssert sa;
 	
 	
 	@BeforeClass
-	public void setup() {
-		//driver = BaseClass.getDriver();//DriverOptions.getDriver(browserType);				
+	public void setup() {			
 		login = new Login();
 		navigation = new Navigation();
 	}

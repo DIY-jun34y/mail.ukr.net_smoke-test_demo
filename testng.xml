@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SmokeTest" parallel="false" verbose = "2">
-	<parameter name="browserType" value="htmlunit"/>
+	<parameter name="browserType" value="firefox"/>
 	<test name="Test" preserve-order="true">
-    	<classes>
-      		<class name="tests.Test_Login">
+    	<classes>      		
+			<class name="tests.Test_Registration">
+			</class>
+			<class name="tests.Test_Login">
 			</class>	
 			<class name="tests.Test_Functional_Main">
       			<methods>					
@@ -21,8 +23,6 @@
 				  	<include name="test_DragAndDrop_InboxToSpam"/>
 				  	<include name="test_Send_With_Attachment"/>			
 				</methods>			
-			</class>
-			<class name="tests.Test_Registration">
 			</class>			
     	</classes>
   	</test> <!-- Test -->

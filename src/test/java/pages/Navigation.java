@@ -66,11 +66,11 @@ public class Navigation extends BaseClass {
 		return new Folder();
 	}	
 	
-	public void newMessage() {
+	public void newMessage(){
 		newMsgBtn.click();		
 	}
 			
-	public void logout() {		
+	public void logout(){		
 		hoover(profileMenu).click();;
 		implicitlyWait(3);
 		logoutLink.click();		

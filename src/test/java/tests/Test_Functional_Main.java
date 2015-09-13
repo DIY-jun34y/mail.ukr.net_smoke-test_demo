@@ -21,20 +21,17 @@ public class Test_Functional_Main extends BaseClass{
 			+ " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
 			+ "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 	
-	public SoftAssert sa;
-	
-	public Login login; 
-	public Navigation navigation;	
-	public Folder inbox, drafts, sent, spam, trash;
-	public Message message;	
+	private SoftAssert sa;
+	private Login login; 
+	private Navigation navigation;	
+	private Folder inbox, sent, spam, trash;
+	private Message message;	
 	
 	@BeforeClass
 	public void setup() {
-		
 		login = new Login();
 		navigation = new Navigation();		
-		inbox = new Folder();
-		drafts = new Folder();
+		inbox = new Folder();		
 		sent = new Folder();
 		spam = new Folder();
 		trash = new Folder();		
@@ -42,7 +39,7 @@ public class Test_Functional_Main extends BaseClass{
 	}	
 		
 	@BeforeMethod
-	private void newSoftAssertObject(){
+	public void newSoftAssertObject(){
 		this.sa = new SoftAssert();			
 	}
 			
