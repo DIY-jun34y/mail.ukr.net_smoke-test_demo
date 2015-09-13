@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="4" time="68.376" errors="0" skipped="0" tests="14" name="TestSuite">
+<testsuite failures="0" time="91.749" errors="0" skipped="0" tests="15" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="Q:\Java\jre7\bin"/>
@@ -28,7 +28,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows XP"/>
-    <property name="classworlds.conf" value="Q:\eclipse\projects-mars\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6636976320752904350.tmp"/>
+    <property name="classworlds.conf" value="Q:\eclipse\projects-mars\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4453636500595960548.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
     <property name="java.library.path" value="Q:\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;Q:/Java/jre7/bin/client;Q:/Java/jre7/bin;Q:/Java/jre7/lib/i386;Q:\Python3\;Q:\Python3\Scripts;Q:\Python27\Scripts\;Q:\Python27\;C:\Program Files\ImageMagick-6.8.7-Q16;C:\Program Files\Common Files\Intel\Shared Files\cpp\bin\ia32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\MKVtoolnix;C:\PROGRA~1\DISKEE~1\DISKEE~1\;g:\PHP Developer Pack\system\libs;Q:\Calibre2\;C:\OpenVPN\bin;C:\Program Files\Microsoft\Web Platform Installer\;Q:\Skype\Phone\;Q:\Mozilla Firefox\;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\Pinnacle\Shared Files;C:\Program Files\Pinnacle\Shared Files\Filter;Q:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -63,43 +63,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="1.657" classname="tests.SmokeTest" name="testRegPageEmptyFieldsErrorHandling"/>
-  <testcase time="1.5" classname="tests.SmokeTest" name="testCheckRegistrationLinks"/>
-  <testcase time="1.5" classname="tests.SmokeTest" name="testRegistration">
-    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at tests.SmokeTest.testRegistration(SmokeTest.java:117)
-</failure>
-  </testcase>
-  <testcase time="4.235" classname="tests.SmokeTest" name="testLogin">
-    <failure message="The following asserts failed:
-Inbox folder link is missing! expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-Inbox folder link is missing! expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testLogin(SmokeTest.java:167)
-</failure>
-  </testcase>
-  <testcase time="1.093" classname="tests.SmokeTest" name="testLogin"/>
-  <testcase time="1" classname="tests.SmokeTest" name="testLogin">
-    <failure message="The following asserts failed:
-Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testLogin(SmokeTest.java:167)
-</failure>
-  </testcase>
-  <testcase time="5.735" classname="tests.SmokeTest" name="testCreateMessage"/>
-  <testcase time="13.968" classname="tests.SmokeTest" name="testSendMessage"/>
-  <testcase time="5.594" classname="tests.SmokeTest" name="testOpenInboxMessage"/>
-  <testcase time="10.594" classname="tests.SmokeTest" name="testReplyToMessage"/>
-  <testcase time="7.875" classname="tests.SmokeTest" name="testForwardInboxMessage"/>
-  <testcase time="4.703" classname="tests.SmokeTest" name="testMoveToTrashFromInboxList">
-    <failure message="The following asserts failed:
-testMoveToTrashFromInboxList failed expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
-testMoveToTrashFromInboxList failed expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testMoveToTrashFromInboxList(SmokeTest.java:255)
-</failure>
-  </testcase>
-  <testcase time="4.89" classname="tests.SmokeTest" name="testReadAndMoveToTrash"/>
-  <testcase time="4.032" classname="tests.SmokeTest" name="testRecoverFromTrashToInbox"/>
+  <testcase time="4.953" classname="tests.SmokeTest" name="test_Login"/>
+  <testcase time="1.453" classname="tests.SmokeTest" name="test_Login"/>
+  <testcase time="1" classname="tests.SmokeTest" name="test_Login"/>
+  <testcase time="6.859" classname="tests.SmokeTest" name="test_CreateMessage"/>
+  <testcase time="15" classname="tests.SmokeTest" name="test_SendMessage"/>
+  <testcase time="4.297" classname="tests.SmokeTest" name="test_OpenInboxMessage"/>
+  <testcase time="10.125" classname="tests.SmokeTest" name="test_ReplyToMessage"/>
+  <testcase time="8.313" classname="tests.SmokeTest" name="test_ForwardInboxMessage"/>
+  <testcase time="5.14" classname="tests.SmokeTest" name="test_Read_And_Move_ToTrash"/>
+  <testcase time="4.297" classname="tests.SmokeTest" name="test_Move_FromInboxList_ToTrash"/>
+  <testcase time="4.344" classname="tests.SmokeTest" name="test_Recover_FromTrashList_ToInbox"/>
+  <testcase time="3.562" classname="tests.SmokeTest" name="test_Move_FromInboxList_ToSpam"/>
+  <testcase time="3.75" classname="tests.SmokeTest" name="test_Recover_FromSpamList_ToInbox"/>
+  <testcase time="6.219" classname="tests.SmokeTest" name="test_DragAndDrop_InboxToSpam"/>
+  <testcase time="12.437" classname="tests.SmokeTest" name="test_Send_With_Attachment"/>
 </testsuite>

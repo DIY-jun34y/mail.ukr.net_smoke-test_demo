@@ -3,25 +3,15 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.SmokeTest">
+      <class name="tests.Test_Registration">
         <methods>
-          <include name="testCreateMessage"/>
-          <include name="testForwardInboxMessage"/>
-          <include name="testOpenInboxMessage"/>
           <include name="setup"/>
-          <include name="testReadAndMoveToTrash"/>
-          <include name="testReplyToMessage"/>
-          <include name="testMoveToTrashFromInboxList"/>
-          <include name="testCheckRegistrationLinks"/>
-          <include name="testRegPageEmptyFieldsErrorHandling"/>
           <include name="newSoftAssertObject"/>
-          <include name="testRecoverFromTrashToInbox"/>
-          <include name="testLogin" invocation-numbers="0 1 2"/>
-          <include name="testSendMessage"/>
-          <include name="tearDown"/>
+          <include name="tearDownSuite"/>
           <include name="testRegistration"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- tests.SmokeTest -->
+      </class> <!-- tests.Test_Registration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

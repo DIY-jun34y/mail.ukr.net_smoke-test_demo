@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 11 02:04:03 EEST 2015</td>
+<td>Started on:</td><td>Sun Sep 13 01:00:48 EEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>79 seconds (79359 ms)</td>
+<tr><td>Total time:</td><td>97 seconds (97078 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,125 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.SmokeTest.testLogin()'><b>testLogin</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can login only with valid credentials<br>Parameters: tester0667804531, p455word, Valid credentials</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-Inbox folder link is missing! expected [false] but found [true]
-	at tests.SmokeTest.testLogin(SmokeTest.java:161)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace3645777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace3645777'><pre>java.lang.AssertionError: The following asserts failed:
-Inbox folder link is missing! expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testLogin(SmokeTest.java:161)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>3</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
-<tr>
-<td title='tests.SmokeTest.testLogin()'><b>testLogin</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can login only with valid credentials<br>Parameters: wrong_login_name, p455word, Неверно указан логин или пароль. Подробнее </td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]
-	at tests.SmokeTest.testLogin(SmokeTest.java:161)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10584385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace10584385'><pre>java.lang.AssertionError: The following asserts failed:
-Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testLogin(SmokeTest.java:161)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>1</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
-<tr>
-<td title='tests.SmokeTest.testReadAndMoveToTrash()'><b>testReadAndMoveToTrash</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can delete inbox message to Trash while it's opened)</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-Mismatch of Date in original/deleted message! expected [сьогодні, 01:03] but found [test: create new message-3]
-	at tests.SmokeTest.testReadAndMoveToTrash(SmokeTest.java:246)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26439947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace26439947'><pre>java.lang.AssertionError: The following asserts failed:
-Mismatch of Date in original/deleted message! expected [сьогодні, 01:03] but found [test: create new message-3]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testReadAndMoveToTrash(SmokeTest.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-</pre></div></td>
-<td>5</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -194,55 +75,80 @@ Mismatch of Date in original/deleted message! expected [сьогодні, 01:03] but fou
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SmokeTest.testCheckRegistrationLinks()'><b>testCheckRegistrationLinks</b><br>Test class: tests.SmokeTest<br>Test method: Checking registration links on the login page</td>
+<td title='tests.SmokeTest.test_CreateMessage()'><b>test_CreateMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can create a message(it's stored in Drafts automatically)</td>
 <td></td>
-<td>1</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
+<td>6</td>
+<td>tests.SmokeTest@19daa20</td></tr>
 <tr>
-<td title='tests.SmokeTest.testCreateMessage()'><b>testCreateMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can create a message(it's stored in Drafts automatically)</td>
+<td title='tests.SmokeTest.test_DragAndDrop_InboxToSpam()'><b>test_DragAndDrop_InboxToSpam</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can drag-n-drop selected message from Inbox to Spam folder)</td>
 <td></td>
-<td>7</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
+<td>5</td>
+<td>tests.SmokeTest@19daa20</td></tr>
 <tr>
-<td title='tests.SmokeTest.testForwardInboxMessage()'><b>testForwardInboxMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can forward inbox message</td>
+<td title='tests.SmokeTest.test_ForwardInboxMessage()'><b>test_ForwardInboxMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can forward inbox message</td>
 <td></td>
-<td>9</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
+<td>8</td>
+<td>tests.SmokeTest@19daa20</td></tr>
 <tr>
-<td title='tests.SmokeTest.testLogin()'><b>testLogin</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can login only with valid credentials<br>Parameters: tester0667804531, wrong_pass, Неверно указан логин или пароль. Подробнее</td>
-<td></td>
-<td>1</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
-<tr>
-<td title='tests.SmokeTest.testMoveToTrashFromInboxList()'><b>testMoveToTrashFromInboxList</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can move a message to Trash strait from Inbox-list </td>
+<td title='tests.SmokeTest.test_Login()'><b>test_Login</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can login only with valid credentials<br>Parameters: tester0667804531, p455word, true, Valid credentials</td>
 <td></td>
 <td>4</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
+<td>tests.SmokeTest@19daa20</td></tr>
 <tr>
-<td title='tests.SmokeTest.testOpenInboxMessage()'><b>testOpenInboxMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can open inbox message from list</td>
-<td></td>
-<td>5</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
-<tr>
-<td title='tests.SmokeTest.testRecoverFromTrashToInbox()'><b>testRecoverFromTrashToInbox</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can recover message from Trash-list back to Inbox</td>
-<td></td>
-<td>5</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
-<tr>
-<td title='tests.SmokeTest.testRegPageEmptyFieldsErrorHandling()'><b>testRegPageEmptyFieldsErrorHandling</b><br>Test class: tests.SmokeTest<br>Test method: Checking error messages on the Registration page - 'Empty fields'</td>
+<td title='tests.SmokeTest.test_Login()'><b>test_Login</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can login only with valid credentials<br>Parameters: tester0667804531, wrong_pass, false, Неверно указан логин или пароль. Подробнее</td>
 <td></td>
 <td>1</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
+<td>tests.SmokeTest@19daa20</td></tr>
 <tr>
-<td title='tests.SmokeTest.testReplyToMessage()'><b>testReplyToMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can reply to inbox message</td>
+<td title='tests.SmokeTest.test_Login()'><b>test_Login</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can login only with valid credentials<br>Parameters: wrong_login_name, p455word, false, Неверно указан логин или пароль. Подробнее</td>
+<td></td>
+<td>1</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_Move_FromInboxList_ToSpam()'><b>test_Move_FromInboxList_ToSpam</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can move a message to Spam directly from Inbox</td>
+<td></td>
+<td>4</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_Move_FromInboxList_ToTrash()'><b>test_Move_FromInboxList_ToTrash</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can move a message to Trash from Inbox-list </td>
+<td></td>
+<td>3</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_OpenInboxMessage()'><b>test_OpenInboxMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can open inbox message from list</td>
+<td></td>
+<td>4</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_Read_And_Move_ToTrash()'><b>test_Read_And_Move_ToTrash</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can move opened Inbox message to Trash immediately)</td>
+<td></td>
+<td>4</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_Recover_FromSpamList_ToInbox()'><b>test_Recover_FromSpamList_ToInbox</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can recover message from Spam folder (back to Inbox)</td>
+<td></td>
+<td>3</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_Recover_FromTrashList_ToInbox()'><b>test_Recover_FromTrashList_ToInbox</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can recover message from Trash back to Inbox</td>
+<td></td>
+<td>5</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_ReplyToMessage()'><b>test_ReplyToMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can reply to inbox message</td>
+<td></td>
+<td>9</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_SendMessage()'><b>test_SendMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can send a message (it's stored in Sent automatically)</td>
+<td></td>
+<td>16</td>
+<td>tests.SmokeTest@19daa20</td></tr>
+<tr>
+<td title='tests.SmokeTest.test_Send_With_Attachment()'><b>test_Send_With_Attachment</b><br>Test class: tests.SmokeTest</td>
 <td></td>
 <td>12</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
-<tr>
-<td title='tests.SmokeTest.testSendMessage()'><b>testSendMessage</b><br>Test class: tests.SmokeTest<br>Test method: As a User I can send a message (it's stored in Sent automatically)</td>
-<td></td>
-<td>15</td>
-<td>tests.SmokeTest@15ba1ef</td></tr>
+<td>tests.SmokeTest@19daa20</td></tr>
 </table><p>
 </body>
 </html>

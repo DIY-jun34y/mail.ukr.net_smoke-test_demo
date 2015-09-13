@@ -1,13 +1,10 @@
+Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Folder.java
+Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\helpers\DriverOptions.java
 Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\helpers\TestData.java
-Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Spam.java
 Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\helpers\BaseClass.java
 Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Navigation.java
-Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\RegisterPage.java
+Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Registration.java
 Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\ConfirmationPage.java
-Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Drafts.java
 Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\tests\SmokeTest.java
 Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Message.java
-Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Inbox.java
-Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\LoginPage.java
-Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Sent.java
-Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Trash.java
+Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\src\test\java\pages\Login.java

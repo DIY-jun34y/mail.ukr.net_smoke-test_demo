@@ -18,7 +18,7 @@ public class Navigation extends BaseClass {
 	@FindBy (css = "[class~=\"unread\"]") public WebElement unreadLink;			//Непрочитанные
 	@FindBy (css = "[class~=\"marked\"]") public WebElement markedLink;			//Отмченные
 	@FindBy (css = "[class~=\"files\"]") public WebElement attachmentsLink; 	//Вложения
-	@FindBy (css = ".sidebar__profile") public WebElement profileMenu;		//Меню Профиля пользователя
+	@FindBy (css = ".sidebar__profile-user") public WebElement profileMenu;		//Меню Профиля пользователя
 	
 	//pop-up profile menu
 	@FindBy (css = "[href*=\"logout\"]") public WebElement logoutLink;		//Выход (Logout)
@@ -40,27 +40,32 @@ public class Navigation extends BaseClass {
 		super(driver);	
 	}	
 	
-	public void goToInbox(){
-		inboxLink.click();		
+	public Folder goToInbox(){
+		inboxLink.click();
+		return new Folder(driver);
 	}
 	
-	public void goToDrafts(){
-		draftsLink.click();		
+	public Folder goToDrafts(){
+		draftsLink.click();
+		return new Folder(driver);
 	}
 	
-	public void goToSent(){
-		sentLink.click();		
+	public Folder goToSent(){
+		sentLink.click();
+		return new Folder(driver);
 	}
 	
-	public void goToTrash(){
-		trashLink.click();		
+	public Folder goToTrash(){
+		trashLink.click();
+		return new Folder(driver);
 	}
 	
-	public void goToSpam(){
-		spamLink.click();		
+	public Folder goToSpam(){
+		spamLink.click();
+		return new Folder(driver);
 	}	
 	
-	public void newMsg() {
+	public void newMessage() {
 		newMsgBtn.click();		
 	}
 			

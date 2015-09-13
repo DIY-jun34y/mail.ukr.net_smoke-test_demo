@@ -8,9 +8,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class Login extends BaseClass{
 	
-	public final String LoginUrl = "https://mail.ukr.net";	
-	public final String pageTitle = "Почта @ ukr.net - украинская электронная почта • Создать емейл";
-	
+	public final String LoginURL = "https://mail.ukr.net";	
+		
 	@FindBy (id = "login") public WebElement userNameField;
 	@FindBy (id = "password") public WebElement passwordField;	
 	@FindBy (css = ".login__foot>button") public WebElement loginBtn;	
@@ -34,7 +33,7 @@ public class Login extends BaseClass{
 	}
 	
 	public Login load() {
-		load(LoginUrl);
+		load(LoginURL);
 		return this;
 	}
 	
@@ -74,5 +73,5 @@ public class Login extends BaseClass{
 		setUserName(username);
 		setPassword(password);
 		submitLoginBtn();
-	    }
-	}
+    }
+}

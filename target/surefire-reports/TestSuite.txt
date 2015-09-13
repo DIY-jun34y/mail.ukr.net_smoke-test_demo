@@ -1,26 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 73.078 sec <<< FAILURE!
-testRegistration(tests.SmokeTest)  Time elapsed: 1.5 sec  <<< FAILURE!
-java.lang.NullPointerException: null
-	at tests.SmokeTest.testRegistration(SmokeTest.java:117)
-
-testLogin(tests.SmokeTest)  Time elapsed: 4.235 sec  <<< FAILURE!
-java.lang.AssertionError: The following asserts failed:
-Inbox folder link is missing! expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testLogin(SmokeTest.java:167)
-
-testLogin(tests.SmokeTest)  Time elapsed: 1 sec  <<< FAILURE!
-java.lang.AssertionError: The following asserts failed:
-Something wrong with Error messsage! expected [Неверно указан логин или пароль. Подробнее ] but found [Неверно указан логин или пароль. Подробнее]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testLogin(SmokeTest.java:167)
-
-testMoveToTrashFromInboxList(tests.SmokeTest)  Time elapsed: 4.703 sec  <<< FAILURE!
-java.lang.AssertionError: The following asserts failed:
-testMoveToTrashFromInboxList failed expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at tests.SmokeTest.testMoveToTrashFromInboxList(SmokeTest.java:255)
-
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 96.484 sec

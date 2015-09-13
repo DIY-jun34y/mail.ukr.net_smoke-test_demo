@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite verbose="2" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
       <class name="tests.SmokeTest">
         <methods>
-          <include name="newSoftAssertObject"/>
-          <include name="testLogin" invocation-numbers="0 2"/>
+          <include name="test_Recover_FromTrashList_ToInbox"/>
+          <include name="test_OpenInboxMessage"/>
+          <include name="test_Recover_FromSpamList_ToInbox"/>
+          <include name="test_ReplyToMessage"/>
+          <include name="test_Move_FromInboxList_ToTrash"/>
           <include name="setup"/>
-          <include name="testReadAndMoveToTrash"/>
-          <include name="tearDown"/>
+          <include name="test_Send_With_Attachment"/>
+          <include name="test_Read_And_Move_ToTrash"/>
+          <include name="test_ForwardInboxMessage"/>
+          <include name="test_Move_FromInboxList_ToSpam"/>
+          <include name="test_CreateMessage"/>
+          <include name="test_SendMessage"/>
+          <include name="test_DragAndDrop_InboxToSpam"/>
+          <include name="test_Login"/>
         </methods>
       </class> <!-- tests.SmokeTest -->
     </classes>

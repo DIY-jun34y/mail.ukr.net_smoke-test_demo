@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite verbose="2" name="Failed suite [SmokeTest]">
   <test name="Test(failed)">
     <classes>
-      <class name="tests.SmokeTest">
+      <class name="tests.Test_Functional_Main">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="newSoftAssertObject"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Test_Functional_Main -->
+      <class name="tests.Test_Registration">
+        <methods>
+          <include name="setup"/>
+          <include name="newSoftAssertObject"/>
+          <include name="testRegistration"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- tests.Test_Registration -->
+      <class name="tests.Test_Login">
         <methods>
           <include name="newSoftAssertObject"/>
-          <include name="testLogin" invocation-numbers="0 2"/>
           <include name="setup"/>
-          <include name="testReadAndMoveToTrash"/>
-          <include name="tearDown"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- tests.SmokeTest -->
+      </class> <!-- tests.Test_Login -->
     </classes>
   </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Failed suite [SmokeTest] -->

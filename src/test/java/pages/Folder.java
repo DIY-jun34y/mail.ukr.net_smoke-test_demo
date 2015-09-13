@@ -21,13 +21,13 @@ public class Folder extends BaseClass{
 	@FindBy (css = "[data-select~=\"unmarked\"]") public WebElement msgSelectUnmarked;	//Неотмеченные
 
 	//Top menu elements
-	@FindBy (css = "[class~=\"remove\"]") public WebElement msgDelete;			//Удалить/Удалить навсегда	
-	@FindBy (css = "[class~=\"spam\"]") public WebElement msgToSpam;			//В Спам!
-	@FindBy (css = "[class~=\"move\"]") public WebElement msgToFolder;			//Переместить
+	@FindBy (css = ".controls-link.remove") public WebElement msgDelete;			//Удалить/Удалить навсегда	
+	@FindBy (css = ".controls-link.spam") public WebElement msgToSpam;			//В Спам!
+	@FindBy (css = ".controls-link.move") public WebElement msgToFolder;			//Переместить
 	@FindBy (xpath = "//div[1]/div[2]/div/div/div[1]/div[2]/div[2]/div/div[1]/a[1]") 
 	public WebElement toInbox;			//Восстановить во входящие
 	
-	@FindBy (css = "[class~=\"more\"]") public WebElement moreOptions;			//Еще
+	@FindBy (css = ".controls-link.more") public WebElement moreOptions;			//Еще
 	@FindBy (css = "[data-status~=\"1\"]") public WebElement msgIsRead;			//Пометить прочитанным
 	@FindBy (css = "[data-status~=\"0\"]") public WebElement msgIsUnread;		//Пометить Непрочитанным
 	
@@ -40,33 +40,46 @@ public class Folder extends BaseClass{
 		
 	public Folder(WebDriver driver){
 		super(driver);			
-	}
-			
-	public WebElement getMessageWithId(String string){		
-		return driver.findElement(By.id(string));
-	}
+	}	
 
-	public void moveSelectedToTrash() {
+	public void moveItToTrash() {
 		msgDelete.click();		
 	}
 	
-	public void openMessage(String message_id) {
-		driver.findElement(By.cssSelector("[href*=\""+message_id.substring(3)+"\"]")).click();
+	public void moveItToSpam() {
+		msgToSpam.click();		
 	}
 	
-	public void moveSelectedToInbox() {
+	public void ItIsNotSpam() {
+		msgToSpam.click();		
+	}
+
+	public void moveItToInbox() {
 		msgToFolder.click();		
 		hoover(toInbox).click();
 	}
 	
-	public void clear(){
+	public Folder selectAll(){
+		hoover(msglistCheckbox).click();
+		return this;
+	}
+	
+	public void clearAll(){
 		hoover(msglistCheckbox).click();
 		msgDelete.click();
-	}	
+	}
+	
+	public WebElement getMessageWithId(String message_id){		
+		return driver.findElement(By.id(message_id));
+	}
+	
+	public void openMessageWithId(String message_id) {
+		driver.findElement(By.cssSelector("[href*=\""+message_id.substring(3)+"\"]")).click();
+	}
 	
 	public void openMsgWithSubject(String subj){
 		try {
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -78,11 +91,12 @@ public class Folder extends BaseClass{
 		}	
 	}
 	
-	public void selectAnyFromList(){
+	public Folder selectAnyFromList(){
 		int s = msgList.size();
 		int n = (int) (1+Math.round((s-1)*Math.random()));
 		msgId = driver.findElement(By.xpath("//section/table/tbody/tr["+n+"]")).getAttribute("id");
-		hoover(driver.findElement(By.xpath("//section/table/tbody/tr["+n+"]/td[1]/label/input"))).click();		
+		hoover(driver.findElement(By.xpath("//section/table/tbody/tr["+n+"]/td[1]/label/input"))).click();
+		return this;
 	}
 	
 	public void openAnyFromList(){
@@ -93,5 +107,7 @@ public class Folder extends BaseClass{
 		msgDate = driver.findElement(By.cssSelector(".readmsg__head-date")).getText();
 		msgSubj = driver.findElement(By.cssSelector(".readmsg__subject")).getText();		
 	}
+
+	
 	
 }
