@@ -1,0 +1,6 @@
+This field must be filled
+Password cannot be empty
+Name and surname must be specified
+Specify birth date
+This field must be filled
+Enter the characters displayed in the image

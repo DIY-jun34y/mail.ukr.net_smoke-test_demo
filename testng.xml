@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SmokeTest" parallel="false" verbose = "2">
+<suite name="SmokeTest" parallel="false" verbose = "2">	
+	<test name="SmokeTest-Firefox" preserve-order="true">
 	<parameter name="browserType" value="firefox"/>
-	<test name="Test" preserve-order="true">
+	<parameter name="clearCookies" value="false"/>
     	<classes>      		
 			<class name="tests.Test_Registration">
 			</class>
 			<class name="tests.Test_Login">
 			</class>	
 			<class name="tests.Test_Functional_Main">
-      			<methods>					
+      			<methods> 					
  					<include name="test_CreateMessage" />
 					<include name="test_SendMessage" />
+					<include name="test_Send_With_Attachment"/>
 					<include name="test_OpenInboxMessage" />
 					<include name="test_ReplyToMessage" />
 				  	<include name="test_ForwardInboxMessage" />					
@@ -21,7 +23,7 @@
 				  	<include name="test_Move_FromInboxList_ToSpam"/>
 				  	<include name="test_Recover_FromSpamList_ToInbox"/>		  	
 				  	<include name="test_DragAndDrop_InboxToSpam"/>
-				  	<include name="test_Send_With_Attachment"/>			
+				  				
 				</methods>			
 			</class>			
     	</classes>

@@ -48,9 +48,9 @@ public abstract class DriverOptions {
 	}
 	
 	private static ChromeDriver newChromeDriver() {
-		String chromePath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";		
 		System.setProperty("webdriver.chrome.driver", "Q:/eclipse/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
+		String chromePath = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";		
 		options.setBinary(chromePath);
 		return new ChromeDriver(options);
 	}	

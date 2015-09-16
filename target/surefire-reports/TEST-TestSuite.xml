@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="91.749" errors="0" skipped="0" tests="15" name="TestSuite">
+<testsuite failures="3" time="105.717" errors="0" skipped="1" tests="17" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="Q:\Java\jre7\bin"/>
@@ -28,9 +28,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows XP"/>
-    <property name="classworlds.conf" value="Q:\eclipse\projects-mars\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4453636500595960548.tmp"/>
+    <property name="classworlds.conf" value="Q:\eclipse\projects-mars\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1196327356024048854.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="Q:\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;Q:/Java/jre7/bin/client;Q:/Java/jre7/bin;Q:/Java/jre7/lib/i386;Q:\Python3\;Q:\Python3\Scripts;Q:\Python27\Scripts\;Q:\Python27\;C:\Program Files\ImageMagick-6.8.7-Q16;C:\Program Files\Common Files\Intel\Shared Files\cpp\bin\ia32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\MKVtoolnix;C:\PROGRA~1\DISKEE~1\DISKEE~1\;g:\PHP Developer Pack\system\libs;Q:\Calibre2\;C:\OpenVPN\bin;C:\Program Files\Microsoft\Web Platform Installer\;Q:\Skype\Phone\;Q:\Mozilla Firefox\;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\Pinnacle\Shared Files;C:\Program Files\Pinnacle\Shared Files\Filter;Q:\eclipse;;."/>
+    <property name="java.library.path" value="Q:\Java\jre7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;Q:/Java/jre7/bin/client;Q:/Java/jre7/bin;Q:/Java/jre7/lib/i386;Q:\Python3\;Q:\Python3\Scripts;Q:\Python27\Scripts\;Q:\Python27\;C:\Program Files\ImageMagick-6.8.7-Q16;C:\Program Files\Common Files\Intel\Shared Files\cpp\bin\ia32;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\MKVtoolnix;C:\PROGRA~1\DISKEE~1\DISKEE~1\;g:\PHP Developer Pack\system\libs;Q:\Calibre2\;C:\OpenVPN\bin;C:\Program Files\Microsoft\Web Platform Installer\;Q:\Skype\Phone\;Q:\Vagrant\bin;Q:\Mozilla Firefox\;C:\Program Files\ImageConverter Plus;C:\Program Files\ImageConverter Plus\Microsoft.VC80.CRT;C:\Program Files\ImageConverter Plus\Microsoft.VC80.MFC;C:\Program Files\Pinnacle\Shared Files;C:\Program Files\Pinnacle\Shared Files\Filter;Q:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="51.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -63,19 +63,80 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase time="4.953" classname="tests.SmokeTest" name="test_Login"/>
-  <testcase time="1.453" classname="tests.SmokeTest" name="test_Login"/>
-  <testcase time="1" classname="tests.SmokeTest" name="test_Login"/>
-  <testcase time="6.859" classname="tests.SmokeTest" name="test_CreateMessage"/>
-  <testcase time="15" classname="tests.SmokeTest" name="test_SendMessage"/>
-  <testcase time="4.297" classname="tests.SmokeTest" name="test_OpenInboxMessage"/>
-  <testcase time="10.125" classname="tests.SmokeTest" name="test_ReplyToMessage"/>
-  <testcase time="8.313" classname="tests.SmokeTest" name="test_ForwardInboxMessage"/>
-  <testcase time="5.14" classname="tests.SmokeTest" name="test_Read_And_Move_ToTrash"/>
-  <testcase time="4.297" classname="tests.SmokeTest" name="test_Move_FromInboxList_ToTrash"/>
-  <testcase time="4.344" classname="tests.SmokeTest" name="test_Recover_FromTrashList_ToInbox"/>
-  <testcase time="3.562" classname="tests.SmokeTest" name="test_Move_FromInboxList_ToSpam"/>
-  <testcase time="3.75" classname="tests.SmokeTest" name="test_Recover_FromSpamList_ToInbox"/>
-  <testcase time="6.219" classname="tests.SmokeTest" name="test_DragAndDrop_InboxToSpam"/>
-  <testcase time="12.437" classname="tests.SmokeTest" name="test_Send_With_Attachment"/>
+  <testcase time="2.312" classname="tests.Test_Registration" name="testCheckRegistrationLinks"/>
+  <testcase time="0.985" classname="tests.Test_Registration" name="testRegPageEmptyFieldsErrorHandling"/>
+  <testcase time="4.515" classname="tests.Test_Registration" name="testRegistration">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
+Command duration or timeout: 3.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+*** Element info: {Using=css selector, value=.signup-done__view&gt;button}
+Session ID: a76c4ccb-f049-44da-817e-532e83ed4405
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
+Command duration or timeout: 3.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+*** Element info: {Using=css selector, value=.signup-done__view&gt;button}
+Session ID: a76c4ccb-f049-44da-817e-532e83ed4405
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</failure>
+  </testcase>
+  <testcase time="4.515" classname="tests.Test_Login" name="test_Login">
+    <skipped/>
+  </testcase>
+  <testcase time="7.718" classname="tests.Test_Functional_Main" name="test_CreateMessage"/>
+  <testcase time="17.313" classname="tests.Test_Functional_Main" name="test_SendMessage"/>
+  <testcase time="14.875" classname="tests.Test_Functional_Main" name="test_Send_With_Attachment"/>
+  <testcase time="4.75" classname="tests.Test_Functional_Main" name="test_OpenInboxMessage"/>
+  <testcase time="11.422" classname="tests.Test_Functional_Main" name="test_ReplyToMessage">
+    <failure message="Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.readmsg__body&quot;}
+Command duration or timeout: 3.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+*** Element info: {Using=css selector, value=.readmsg__body}
+Session ID: a76c4ccb-f049-44da-817e-532e83ed4405
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.readmsg__body&quot;}
+Command duration or timeout: 3.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+*** Element info: {Using=css selector, value=.readmsg__body}
+Session ID: a76c4ccb-f049-44da-817e-532e83ed4405
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</failure>
+  </testcase>
+  <testcase time="7.781" classname="tests.Test_Functional_Main" name="test_ForwardInboxMessage"/>
+  <testcase time="4.656" classname="tests.Test_Functional_Main" name="test_Read_And_Move_ToTrash"/>
+  <testcase time="4.313" classname="tests.Test_Functional_Main" name="test_Move_FromInboxList_ToTrash"/>
+  <testcase time="5.5" classname="tests.Test_Functional_Main" name="test_Recover_FromTrashList_ToInbox"/>
+  <testcase time="4.797" classname="tests.Test_Functional_Main" name="test_Move_FromInboxList_ToSpam"/>
+  <testcase time="4.718" classname="tests.Test_Functional_Main" name="test_Recover_FromSpamList_ToInbox"/>
+  <testcase time="5.532" classname="tests.Test_Functional_Main" name="test_DragAndDrop_InboxToSpam"/>
+  <testcase time="0.015" classname="tests.Test_Registration" name="testRegistration">
+    <failure message="The FirefoxDriver cannot be used after quit() was called.
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.SessionNotFoundException">org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:390)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)
+	at helpers.BaseClass.openPage(BaseClass.java:35)
+	at pages.Registration.load(Registration.java:48)
+	at tests.Test_Registration.testRegistration(Test_Registration.java:51)
+</failure>
+  </testcase>
 </testsuite>

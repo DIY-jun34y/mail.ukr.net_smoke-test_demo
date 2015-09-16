@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 14 01:43:51 EEST 2015</td>
+<td>Started on:</td><td>Wed Sep 16 22:12:00 EEST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5297 ms)</td>
+<tr><td>Total time:</td><td>11 seconds (11515 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,31 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.Test_Registration.testRegistration()'><b>testRegistration</b><br>Test class: tests.Test_Registration<br>Test method: (Un)Successful registration</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
-Command duration or timeout: 3.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-*** Element info: {Using=css selector, value=.signup-done__view&gt;button}
-Session ID: 5fc467ad-6c8c-43f5-8388-fa77e27679e4
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at tests.Test_Registration.testRegistration(Test_Registration.java:65)
+<td title='tests.Test_Registration.test_Registration()'><b>test_Registration</b><br>Test class: tests.Test_Registration<br>Test method: (Un)Successful registration - CAPCHA!<br>Parameters: Valid Entry - 
+Cyrillic, newuser99, password99, имя, фамилия, F, 22, 9, 1951, 0930000000, email@email.com</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+expected [Регистрация выполнена успешно] but found [Регистрация]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.Test_Registration.test_Registration(Test_Registration.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -124,38 +105,11 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous175801774918927330webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous175801774918927330webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-</pre></div><a href='#' onClick='toggleBox("stack-trace12414525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace12414525'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
-Command duration or timeout: 3.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-*** Element info: {Using=css selector, value=.signup-done__view&gt;button}
-Session ID: 5fc467ad-6c8c-43f5-8388-fa77e27679e4
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at tests.Test_Registration.testRegistration(Test_Registration.java:65)
+</pre></div><a href='#' onClick='toggleBox("stack-trace29421324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29421324'><pre>java.lang.AssertionError: The following asserts failed:
+expected [Регистрация выполнена успешно] but found [Регистрация]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.Test_Registration.test_Registration(Test_Registration.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -180,16 +134,37 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
-System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous175801774918927330webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous175801774918927330webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 </pre></div></td>
-<td>5</td>
-<td>tests.Test_Registration@10eb2f0</td></tr>
+<td>1</td>
+<td>tests.Test_Registration@54f742</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.Test_Registration.test_CheckRegistrationLinks()'><b>test_CheckRegistrationLinks</b><br>Test class: tests.Test_Registration<br>Test method: Checking registration links on the login page</td>
+<td></td>
+<td>6</td>
+<td>tests.Test_Registration@54f742</td></tr>
+<tr>
+<td title='tests.Test_Registration.test_RegPage_EmptyFieldsErrorHandling()'><b>test_RegPage_EmptyFieldsErrorHandling</b><br>Test class: tests.Test_Registration<br>Test method: Checking error messages on the Registration page - 'Empty fields' case<br>Parameters: RU, src/test/java/helpers/emptyErrorMsgRU.txt</td>
+<td></td>
+<td>0</td>
+<td>tests.Test_Registration@54f742</td></tr>
+<tr>
+<td title='tests.Test_Registration.test_RegPage_EmptyFieldsErrorHandling()'><b>test_RegPage_EmptyFieldsErrorHandling</b><br>Test class: tests.Test_Registration<br>Test method: Checking error messages on the Registration page - 'Empty fields' case<br>Parameters: UA, src/test/java/helpers/emptyErrorMsgUA.txt</td>
+<td></td>
+<td>1</td>
+<td>tests.Test_Registration@54f742</td></tr>
+<tr>
+<td title='tests.Test_Registration.test_RegPage_EmptyFieldsErrorHandling()'><b>test_RegPage_EmptyFieldsErrorHandling</b><br>Test class: tests.Test_Registration<br>Test method: Checking error messages on the Registration page - 'Empty fields' case<br>Parameters: ENG, src/test/java/helpers/emptyErrorMsgENG.txt</td>
+<td></td>
+<td>0</td>
+<td>tests.Test_Registration@54f742</td></tr>
 </table><p>
 </body>
 </html>

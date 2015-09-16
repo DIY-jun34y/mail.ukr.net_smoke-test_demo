@@ -53,8 +53,9 @@ public class Login extends BaseClass{
 	}
 	
 		
-	public void setPublicPlace(){
-		if (!publicPlaceCheckbox.isSelected()) publicPlaceCheckbox.click();				
+	public Login publicPlace_ON(){
+		if (!publicPlaceCheckbox.isSelected()) publicPlaceCheckbox.click();
+		return this;
 	}
 	
 	public void setUserName(String username) {
@@ -72,6 +73,6 @@ public class Login extends BaseClass{
 	public void loginAs(String username, String password) {
 		setUserName(username);
 		setPassword(password);
-		submitLoginBtn();
+		submitLoginBtn();		
     }
 }

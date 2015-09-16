@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="2" name="Failed suite [SmokeTest]">
+  <parameter name="clearCookies" value="false"/>
   <parameter name="browserType" value="firefox"/>
-  <test name="Test(failed)">
+  <test name="SmokeTest-Firefox(failed)">
+    <parameter name="clearCookies" value="false"/>
+    <parameter name="browserType" value="firefox"/>
     <classes>
       <class name="tests.Test_Login">
         <methods>
           <include name="tearDownSuite"/>
-          <include name="newSoftAssertObject"/>
           <include name="setup"/>
           <include name="setupDriver"/>
         </methods>
       </class> <!-- tests.Test_Login -->
+      <class name="tests.Test_Registration">
+        <methods>
+          <include name="setup"/>
+          <include name="newSoftAssertObject"/>
+          <include name="test_Registration" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- tests.Test_Registration -->
       <class name="tests.Test_Functional_Main">
         <methods>
           <include name="newSoftAssertObject"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tests.Test_Functional_Main -->
-      <class name="tests.Test_Registration">
-        <methods>
-          <include name="setup"/>
-          <include name="newSoftAssertObject"/>
-          <include name="testRegistration"/>
-        </methods>
-      </class> <!-- tests.Test_Registration -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- SmokeTest-Firefox(failed) -->
 </suite> <!-- Failed suite [SmokeTest] -->

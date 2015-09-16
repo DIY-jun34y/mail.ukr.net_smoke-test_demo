@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">2 suites, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -36,8 +36,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-SmokeTest">
+              <span class="suite-name border-failed">SmokeTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -47,37 +47,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                  <a href="#" class="navigator-link " panel-name="test-xml-SmokeTest">
                     <span>Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-SmokeTest">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                  <a href="#" class="navigator-link " panel-name="group-SmokeTest">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                  <a href="#" class="navigator-link " panel-name="times-SmokeTest">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-SmokeTest">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SmokeTest">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-SmokeTest">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -90,91 +90,193 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">16 methods, 2 failed,  1 skipped,  13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SmokeTest" class="hide-methods failed suite-SmokeTest"> (hide)</a> <!-- hide-methods failed suite-SmokeTest -->
+                      <a href="#" panel-name="suite-SmokeTest" class="show-methods failed suite-SmokeTest"> (show)</a> <!-- show-methods failed suite-SmokeTest -->
+                    </span>
+                    <div class="method-list-content failed suite-SmokeTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Registration" hash-for-method="testRegistration">testRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_ReplyToMessage">test_ReplyToMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SmokeTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SmokeTest" class="hide-methods skipped suite-SmokeTest"> (hide)</a> <!-- hide-methods skipped suite-SmokeTest -->
+                      <a href="#" panel-name="suite-SmokeTest" class="show-methods skipped suite-SmokeTest"> (show)</a> <!-- show-methods skipped suite-SmokeTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-SmokeTest">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Login" hash-for-method="test_Login">test_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SmokeTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-SmokeTest" class="hide-methods passed suite-SmokeTest"> (hide)</a> <!-- hide-methods passed suite-SmokeTest -->
+                      <a href="#" panel-name="suite-SmokeTest" class="show-methods passed suite-SmokeTest"> (show)</a> <!-- show-methods passed suite-SmokeTest -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-SmokeTest">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_CreateMessage">test_CreateMessage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Registration" hash-for-method="testCheckRegistrationLinks">testCheckRegistrationLinks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_DragAndDrop_InboxToSpam">test_DragAndDrop_InboxToSpam</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Registration" hash-for-method="testRegPageEmptyFieldsErrorHandling">testRegPageEmptyFieldsErrorHandling</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_ForwardInboxMessage">test_ForwardInboxMessage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_CreateMessage">test_CreateMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Login(tester0667804531, wrong_pass, false, Неверно указан логин или пароль. Подробнее)">test_Login(tester0667804531, wrong_pass, false, Неверно указан логин или пароль. Подробнее)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_DragAndDrop_InboxToSpam">test_DragAndDrop_InboxToSpam</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Login(wrong_login_name, p455word, false, Неверно указан логин или пароль. Подробнее)">test_Login(wrong_login_name, p455word, false, Неверно указан логин или пароль. Подробнее)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_ForwardInboxMessage">test_ForwardInboxMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Login(tester0667804531, p455word, true, Valid credentials)">test_Login(tester0667804531, p455word, true, Valid credentials)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_Move_FromInboxList_ToSpam">test_Move_FromInboxList_ToSpam</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Move_FromInboxList_ToSpam">test_Move_FromInboxList_ToSpam</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_Move_FromInboxList_ToTrash">test_Move_FromInboxList_ToTrash</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Move_FromInboxList_ToTrash">test_Move_FromInboxList_ToTrash</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_OpenInboxMessage">test_OpenInboxMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_OpenInboxMessage">test_OpenInboxMessage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_Read_And_Move_ToTrash">test_Read_And_Move_ToTrash</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Read_And_Move_ToTrash">test_Read_And_Move_ToTrash</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_Recover_FromSpamList_ToInbox">test_Recover_FromSpamList_ToInbox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Recover_FromSpamList_ToInbox">test_Recover_FromSpamList_ToInbox</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_Recover_FromTrashList_ToInbox">test_Recover_FromTrashList_ToInbox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Recover_FromTrashList_ToInbox">test_Recover_FromTrashList_ToInbox</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_SendMessage">test_SendMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_ReplyToMessage">test_ReplyToMessage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTest" title="tests.Test_Functional_Main" hash-for-method="test_Send_With_Attachment">test_Send_With_Attachment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content passed suite-SmokeTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Failed_suite_[Default_suite]">
+              <span class="suite-name border-failed">Failed suite [Default suite]</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Failed_suite_[Default_suite]">
+                    <span>Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\test-output\testng-failed.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Failed_suite_[Default_suite]">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Failed_suite_[Default_suite]">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Failed_suite_[Default_suite]">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Failed_suite_[Default_suite]">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Failed_suite_[Default_suite]">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Failed_suite_[Default_suite]">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Failed_suite_[Default_suite]" class="hide-methods failed suite-Failed_suite_[Default_suite]"> (hide)</a> <!-- hide-methods failed suite-Failed_suite_[Default_suite] -->
+                      <a href="#" panel-name="suite-Failed_suite_[Default_suite]" class="show-methods failed suite-Failed_suite_[Default_suite]"> (show)</a> <!-- show-methods failed suite-Failed_suite_[Default_suite] -->
+                    </span>
+                    <div class="method-list-content failed suite-Failed_suite_[Default_suite]">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_SendMessage">test_SendMessage</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Failed_suite_[Default_suite]" title="tests.Test_Registration" hash-for-method="testRegistration">testRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SmokeTest" hash-for-method="test_Send_With_Attachment">test_Send_With_Attachment</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Failed_suite_[Default_suite] -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -185,11 +287,133 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-SmokeTest" class="panel SmokeTest">
+          <div class="suite-SmokeTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Test_Functional_Main</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_ReplyToMessage">
+                  </a> <!-- test_ReplyToMessage -->
+                  <span class="method-name">test_ReplyToMessage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.readmsg__body&quot;}
+Command duration or timeout: 3.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+*** Element info: {Using=css selector, value=.readmsg__body}
+Session ID: a76c4ccb-f049-44da-817e-532e83ed4405
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getText(Unknown Source)
+	at tests.Test_Functional_Main.test_ReplyToMessage(Test_Functional_Main.java:116)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.readmsg__body&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(As a User I can reply to inbox message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeTest-class-failed -->
+          <div class="suite-SmokeTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Test_Registration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistration">
+                  </a> <!-- testRegistration -->
+                  <span class="method-name">testRegistration</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
+Command duration or timeout: 3.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+*** Element info: {Using=css selector, value=.signup-done__view&gt;button}
+Session ID: a76c4ccb-f049-44da-817e-532e83ed4405
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at tests.Test_Registration.testRegistration(Test_Registration.java:65)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.signup-done__view&gt;button&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///J:/Temp/anonymous7141226977594678080webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+((Un)Successful registration)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeTest-class-failed -->
+          <div class="suite-SmokeTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.Test_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_Login">
+                  </a> <!-- test_Login -->
+                  <span class="method-name">test_Login</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Workbook
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Workbook
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 35 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeTest-class-skipped -->
+          <div class="suite-SmokeTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.SmokeTest</span>
+              <span class="class-name">tests.Test_Functional_Main</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -217,36 +441,6 @@
                   <span class="method-name">test_ForwardInboxMessage</span>
                   <em>
 (As a User I can forward inbox message)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_Login(tester0667804531, wrong_pass, false, Неверно указан логин или пароль. Подробнее)">
-                  </a> <!-- test_Login(tester0667804531, wrong_pass, false, Неверно указан логин или пароль. Подробнее) -->
-                  <span class="method-name">test_Login</span>
-                  <span class="parameters">(tester0667804531, wrong_pass, false, Неверно указан логин или пароль. Подробнее)</span>
-                  <em>
-(As a User I can login only with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_Login(wrong_login_name, p455word, false, Неверно указан логин или пароль. Подробнее)">
-                  </a> <!-- test_Login(wrong_login_name, p455word, false, Неверно указан логин или пароль. Подробнее) -->
-                  <span class="method-name">test_Login</span>
-                  <span class="parameters">(wrong_login_name, p455word, false, Неверно указан логин или пароль. Подробнее)</span>
-                  <em>
-(As a User I can login only with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_Login(tester0667804531, p455word, true, Valid credentials)">
-                  </a> <!-- test_Login(tester0667804531, p455word, true, Valid credentials) -->
-                  <span class="method-name">test_Login</span>
-                  <span class="parameters">(tester0667804531, p455word, true, Valid credentials)</span>
-                  <em>
-(As a User I can login only with valid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -305,15 +499,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_ReplyToMessage">
-                  </a> <!-- test_ReplyToMessage -->
-                  <span class="method-name">test_ReplyToMessage</span>
-                  <em>
-(As a User I can reply to inbox message)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="test_SendMessage">
                   </a> <!-- test_SendMessage -->
                   <span class="method-name">test_SendMessage</span>
@@ -329,9 +514,66 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-SmokeTest-class-passed -->
+          <div class="suite-SmokeTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Test_Registration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCheckRegistrationLinks">
+                  </a> <!-- testCheckRegistrationLinks -->
+                  <span class="method-name">testCheckRegistrationLinks</span>
+                  <em>
+(Checking registration links on the login page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegPageEmptyFieldsErrorHandling">
+                  </a> <!-- testRegPageEmptyFieldsErrorHandling -->
+                  <span class="method-name">testRegPageEmptyFieldsErrorHandling</span>
+                  <em>
+(Checking error messages on the Registration page - 'Empty fields')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeTest-class-passed -->
+        </div> <!-- panel SmokeTest -->
+        <div panel-name="suite-Failed_suite_[Default_suite]" class="panel Failed_suite_[Default_suite]">
+          <div class="suite-Failed_suite_[Default_suite]-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Test_Registration</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegistration">
+                  </a> <!-- testRegistration -->
+                  <span class="method-name">testRegistration</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.SessionNotFoundException: The FirefoxDriver cannot be used after quit() was called.
+Build info: version: &apos;2.47.1&apos;, revision: &apos;unknown&apos;, time: &apos;2015-07-30 11:02:44&apos;
+System info: host: &apos;mib-84a305b9628&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Windows XP&apos;, os.arch: &apos;x86&apos;, os.version: &apos;5.1&apos;, java.version: &apos;1.7.0_80&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:390)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:568)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)
+	at helpers.BaseClass.openPage(BaseClass.java:35)
+	at pages.Registration.load(Registration.java:48)
+	at tests.Test_Registration.testRegistration(Test_Registration.java:51)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+((Un)Successful registration)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Failed_suite_[Default_suite]-class-failed -->
+        </div> <!-- panel Failed_suite_[Default_suite] -->
+        <div panel-name="test-xml-SmokeTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -339,14 +581,18 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;SmokeTest&quot;&gt;
+  &lt;test name=&quot;Firefox&quot;&gt;
+    &lt;parameter name=&quot;clearCookies&quot; value=&quot;false&quot;/&gt;
+    &lt;parameter name=&quot;browserType&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.SmokeTest&quot;&gt;
+      &lt;class name=&quot;tests.Test_Registration&quot;/&gt;
+      &lt;class name=&quot;tests.Test_Login&quot;/&gt;
+      &lt;class name=&quot;tests.Test_Functional_Main&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;test_Login&quot;/&gt;
           &lt;include name=&quot;test_CreateMessage&quot;/&gt;
           &lt;include name=&quot;test_SendMessage&quot;/&gt;
+          &lt;include name=&quot;test_Send_With_Attachment&quot;/&gt;
           &lt;include name=&quot;test_OpenInboxMessage&quot;/&gt;
           &lt;include name=&quot;test_ReplyToMessage&quot;/&gt;
           &lt;include name=&quot;test_ForwardInboxMessage&quot;/&gt;
@@ -356,268 +602,629 @@
           &lt;include name=&quot;test_Move_FromInboxList_ToSpam&quot;/&gt;
           &lt;include name=&quot;test_Recover_FromSpamList_ToInbox&quot;/&gt;
           &lt;include name=&quot;test_DragAndDrop_InboxToSpam&quot;/&gt;
-          &lt;include name=&quot;test_Send_With_Attachment&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- tests.SmokeTest --&gt;
+      &lt;/class&gt; &lt;!-- tests.Test_Functional_Main --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- Firefox --&gt;
+&lt;/suite&gt; &lt;!-- SmokeTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="test-xml-Failed_suite_[Default_suite]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Q:\eclipse\projects-mars\mail.ukr.net-smoke-test\test-output\testng-failed.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Failed suite [Default suite]&quot;&gt;
+  &lt;test name=&quot;Default test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Test_Registration&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;tearDownSuite&quot;/&gt;
+          &lt;include name=&quot;setup&quot;/&gt;
+          &lt;include name=&quot;newSoftAssertObject&quot;/&gt;
+          &lt;include name=&quot;setupDriver&quot;/&gt;
+          &lt;include name=&quot;testRegistration&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.Test_Registration --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Failed suite [Default suite] --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SmokeTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Firefox (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="testlist-Failed_suite_[Default_suite]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Tests for Failed suite [Default suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SmokeTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="group-Failed_suite_[Default_suite]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Groups for Failed suite [Default suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SmokeTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_SmokeTest');
+function tableData_SmokeTest() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_SendMessage')
-data.setCell(0, 2, 'tests.SmokeTest')
-data.setCell(0, 3, 15000);
+data.setCell(0, 2, 'tests.Test_Functional_Main')
+data.setCell(0, 3, 17313);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test_Send_With_Attachment')
-data.setCell(1, 2, 'tests.SmokeTest')
-data.setCell(1, 3, 12437);
+data.setCell(1, 2, 'tests.Test_Functional_Main')
+data.setCell(1, 3, 14875);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_ReplyToMessage')
-data.setCell(2, 2, 'tests.SmokeTest')
-data.setCell(2, 3, 10125);
+data.setCell(2, 2, 'tests.Test_Functional_Main')
+data.setCell(2, 3, 11422);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test_ForwardInboxMessage')
-data.setCell(3, 2, 'tests.SmokeTest')
-data.setCell(3, 3, 8313);
+data.setCell(3, 2, 'tests.Test_Functional_Main')
+data.setCell(3, 3, 7781);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'test_CreateMessage')
-data.setCell(4, 2, 'tests.SmokeTest')
-data.setCell(4, 3, 6859);
+data.setCell(4, 2, 'tests.Test_Functional_Main')
+data.setCell(4, 3, 7718);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'test_DragAndDrop_InboxToSpam')
-data.setCell(5, 2, 'tests.SmokeTest')
-data.setCell(5, 3, 6219);
+data.setCell(5, 2, 'tests.Test_Functional_Main')
+data.setCell(5, 3, 5532);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test_Read_And_Move_ToTrash')
-data.setCell(6, 2, 'tests.SmokeTest')
-data.setCell(6, 3, 5140);
+data.setCell(6, 1, 'test_Recover_FromTrashList_ToInbox')
+data.setCell(6, 2, 'tests.Test_Functional_Main')
+data.setCell(6, 3, 5500);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'test_Login')
-data.setCell(7, 2, 'tests.SmokeTest')
-data.setCell(7, 3, 4953);
+data.setCell(7, 1, 'test_Move_FromInboxList_ToSpam')
+data.setCell(7, 2, 'tests.Test_Functional_Main')
+data.setCell(7, 3, 4797);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'test_Recover_FromTrashList_ToInbox')
-data.setCell(8, 2, 'tests.SmokeTest')
-data.setCell(8, 3, 4344);
+data.setCell(8, 1, 'test_OpenInboxMessage')
+data.setCell(8, 2, 'tests.Test_Functional_Main')
+data.setCell(8, 3, 4750);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'test_OpenInboxMessage')
-data.setCell(9, 2, 'tests.SmokeTest')
-data.setCell(9, 3, 4297);
+data.setCell(9, 1, 'test_Recover_FromSpamList_ToInbox')
+data.setCell(9, 2, 'tests.Test_Functional_Main')
+data.setCell(9, 3, 4718);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'test_Move_FromInboxList_ToTrash')
-data.setCell(10, 2, 'tests.SmokeTest')
-data.setCell(10, 3, 4297);
+data.setCell(10, 1, 'test_Read_And_Move_ToTrash')
+data.setCell(10, 2, 'tests.Test_Functional_Main')
+data.setCell(10, 3, 4656);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'test_Recover_FromSpamList_ToInbox')
-data.setCell(11, 2, 'tests.SmokeTest')
-data.setCell(11, 3, 3766);
+data.setCell(11, 1, 'testRegistration')
+data.setCell(11, 2, 'tests.Test_Registration')
+data.setCell(11, 3, 4500);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'test_Move_FromInboxList_ToSpam')
-data.setCell(12, 2, 'tests.SmokeTest')
-data.setCell(12, 3, 3562);
+data.setCell(12, 1, 'test_Move_FromInboxList_ToTrash')
+data.setCell(12, 2, 'tests.Test_Functional_Main')
+data.setCell(12, 3, 4313);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'test_Login')
-data.setCell(13, 2, 'tests.SmokeTest')
-data.setCell(13, 3, 1453);
+data.setCell(13, 1, 'testCheckRegistrationLinks')
+data.setCell(13, 2, 'tests.Test_Registration')
+data.setCell(13, 3, 2312);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'test_Login')
-data.setCell(14, 2, 'tests.SmokeTest')
-data.setCell(14, 3, 984);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(14, 1, 'testRegPageEmptyFieldsErrorHandling')
+data.setCell(14, 2, 'tests.Test_Registration')
+data.setCell(14, 3, 985);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test_Login')
+data.setCell(15, 2, 'tests.Test_Login')
+data.setCell(15, 3, 0);
+window.suiteTableData['SmokeTest']= { tableData: data, tableDiv: 'times-div-SmokeTest'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <div id="times-div-SmokeTest">
+              </div> <!-- times-div-SmokeTest -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="times-Failed_suite_[Default_suite]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Times for Failed suite [Default suite]</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Failed_suite_[Default_suite]');
+function tableData_Failed_suite_[Default_suite]() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testRegistration')
+data.setCell(0, 2, 'tests.Test_Registration')
+data.setCell(0, 3, 0);
+window.suiteTableData['Failed_suite_[Default_suite]']= { tableData: data, tableDiv: 'times-div-Failed_suite_[Default_suite]'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Failed_suite_[Default_suite]">
+              </div> <!-- times-div-Failed_suite_[Default_suite] -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SmokeTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="reporter-Failed_suite_[Default_suite]" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">Reporter output for Failed suite [Default suite]</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="ignored-methods-SmokeTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Test_Functional_Main</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Test_Registration</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Failed_suite_[Default_suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.Test_Registration</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testCheckRegistrationLinks</span>
+                <br/>
+                <span class="ignored-method-name">testRegPageEmptyFieldsErrorHandling</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SmokeTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.SmokeTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup(Firefox)</span>
+              <div class="chronological-class-name">tests.Test_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupDriver(Firefox, false)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Registration</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3703 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">3641 ms</span>
+                <span class="method-start">3734 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test_Login(tester0667804531, p455word, true, Valid credentials)</span>
-                <span class="method-start">3641 ms</span>
+                <span class="method-name">testCheckRegistrationLinks</span>
+                <span class="method-start">3750 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">8594 ms</span>
+                <span class="method-start">6062 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test_Login(tester0667804531, wrong_pass, false, Неверно указан логин или пароль. Подробнее)</span>
-                <span class="method-start">8594 ms</span>
+                <span class="method-name">testRegPageEmptyFieldsErrorHandling</span>
+                <span class="method-start">6062 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">10047 ms</span>
+                <span class="method-start">7047 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test_Login(wrong_login_name, p455word, false, Неверно указан логин или пароль. Подробнее)</span>
-                <span class="method-start">10047 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegistration</span>
+                <span class="method-start">7047 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11562 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Functional_Main</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11562 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">11047 ms</span>
+                <span class="method-start">11594 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_CreateMessage</span>
-                <span class="method-start">11047 ms</span>
+                <span class="method-start">11594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">17906 ms</span>
+                <span class="method-start">19312 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_SendMessage</span>
-                <span class="method-start">17906 ms</span>
+                <span class="method-start">19312 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">32906 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_OpenInboxMessage</span>
-                <span class="method-start">32906 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">37203 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_ReplyToMessage</span>
-                <span class="method-start">37203 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">47328 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_ForwardInboxMessage</span>
-                <span class="method-start">47328 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">55641 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_Read_And_Move_ToTrash</span>
-                <span class="method-start">55641 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">60781 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_Move_FromInboxList_ToTrash</span>
-                <span class="method-start">60781 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">65078 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_Recover_FromTrashList_ToInbox</span>
-                <span class="method-start">65078 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">69422 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_Move_FromInboxList_ToSpam</span>
-                <span class="method-start">69422 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">72984 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_Recover_FromSpamList_ToInbox</span>
-                <span class="method-start">72984 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">76750 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">test_DragAndDrop_InboxToSpam</span>
-                <span class="method-start">76750 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">newSoftAssertObject</span>
-                <span class="method-start">82969 ms</span>
+                <span class="method-start">36625 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_Send_With_Attachment</span>
-                <span class="method-start">82969 ms</span>
+                <span class="method-start">36625 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">95406 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">51500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_OpenInboxMessage</span>
+                <span class="method-start">51500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">56250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_ReplyToMessage</span>
+                <span class="method-start">56250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">67672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_ForwardInboxMessage</span>
+                <span class="method-start">67672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">75453 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Read_And_Move_ToTrash</span>
+                <span class="method-start">75453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">80109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Move_FromInboxList_ToTrash</span>
+                <span class="method-start">80109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">84422 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Recover_FromTrashList_ToInbox</span>
+                <span class="method-start">84422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">89922 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Move_FromInboxList_ToSpam</span>
+                <span class="method-start">89922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">94719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Recover_FromSpamList_ToInbox</span>
+                <span class="method-start">94719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">99437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_DragAndDrop_InboxToSpam</span>
+                <span class="method-start">99437 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">105016 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Registration</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupDriver(Firefox, false)</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegistration</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">105562 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Failed_suite_[Default_suite]" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupDriver(Firefox, false)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Registration</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3703 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">3734 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCheckRegistrationLinks</span>
+                <span class="method-start">3750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">6062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegPageEmptyFieldsErrorHandling</span>
+                <span class="method-start">6062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">7047 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegistration</span>
+                <span class="method-start">7047 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11562 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Functional_Main</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11562 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">11594 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_CreateMessage</span>
+                <span class="method-start">11594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">19312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_SendMessage</span>
+                <span class="method-start">19312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">36625 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Send_With_Attachment</span>
+                <span class="method-start">36625 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">51500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_OpenInboxMessage</span>
+                <span class="method-start">51500 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">56250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_ReplyToMessage</span>
+                <span class="method-start">56250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">67672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_ForwardInboxMessage</span>
+                <span class="method-start">67672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">75453 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Read_And_Move_ToTrash</span>
+                <span class="method-start">75453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">80109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Move_FromInboxList_ToTrash</span>
+                <span class="method-start">80109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">84422 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Recover_FromTrashList_ToInbox</span>
+                <span class="method-start">84422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">89922 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Move_FromInboxList_ToSpam</span>
+                <span class="method-start">89922 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">94719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Recover_FromSpamList_ToInbox</span>
+                <span class="method-start">94719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">99437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_DragAndDrop_InboxToSpam</span>
+                <span class="method-start">99437 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">105016 ms</span>
+              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Test_Registration</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupDriver(Firefox, false)</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">newSoftAssertObject</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRegistration</span>
+                <span class="method-start">105547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">105562 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

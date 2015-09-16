@@ -9,6 +9,7 @@ import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import helpers.BaseClass;
+import helpers.TestDataProvider;
 
 import static tests.Test_Login.validLogin;
 import pages.*;
@@ -45,29 +46,27 @@ public class Test_Registration extends BaseClass{
 		}		
 	}
 	
-	//User can register - skipped - capcha!
-	@Test (description = "(Un)Successful registration")
-	public void testRegistration() {
-		regPage.load()
-		.setLanguage("RU")
-		.setUsername("newuser99")
-		.setPassword("пароль")
-		.setFirstName("имя")
-		.setSurName("фамилия")
-		.setGender("M")
-		.setDateOfBirth("22", "12", "2000")
-		.setMobile("093 0000000")
-		.setEmail("wrwe@erte.com");
-		//set capcha...
-		regPage.submitBtn.click();
+	@Test (description = "(Un)Successful registration - CAPCHA!",
+			dataProvider = "regData", dataProviderClass = TestDataProvider.class)
+	public void test_Registration
+			(String testCase, String loginName, String password, String fname, String surname, 
+			String gender, String bDay, String bMonth, String bYear, String mobile, String email) {
+		regPage
+		.load().setLanguage("RU")
+		.setLoginName(loginName).setPassword(password)
+		.setFirstName(fname).setSurName(surname)
+		.setGender(gender)
+		.setDateOfBirth(bDay, bMonth, bYear)
+		.setMobile(mobile).setEmail(email)
+		//.setCapcha("capcha")
+		.submit();
 		//assert success page is opened...
-		sa.assertEquals(driver.getTitle(), "Регистрация выполнена успешно");
-		sa.assertTrue(confirm.goToMailboxBtn.isDisplayed(), " 'go to Mailbox' button is not found!");
+		sa.assertEquals(driver.getTitle(), "Регистрация выполнена успешно");		
 		sa.assertAll();		
 	}
 	
 	@Test(description = "Checking registration links on the login page")
-	public void testCheckRegistrationLinks() {
+	public void test_CheckRegistrationLinks() {
 		login.load();
 		if (loggedIn()) {navigation.logout();}		
 		sa.assertEquals(
@@ -78,13 +77,15 @@ public class Test_Registration extends BaseClass{
 		sa.assertAll();
 	}
 	
-	@Test(description = "Checking error messages on the Registration page - 'Empty fields'") 
-	public void testRegPageEmptyFieldsErrorHandling() throws IOException {
-		regPage.load().setLanguage("RU");
+	
+	@Test(description = "Checking error messages on the Registration page - 'Empty fields' case",
+			dataProvider = "regEmptyFieldsErrorMessages", dataProviderClass = TestDataProvider.class) 
+	public void test_RegPage_EmptyFieldsErrorHandling(String lang, String errMsgFile) throws IOException {
+		regPage.load().setLanguage(lang);
 		regPage.submitBtn.click();		
 		BufferedReader fileIn = null;
 		try {
-			fileIn = new BufferedReader(new FileReader("src/test/java/helpers/emptyErrorMsgRU.ser"));
+			fileIn = new BufferedReader(new FileReader(errMsgFile));
 			for (WebElement errMsg : regPage.errorsList) {			
 				sa.assertEquals(errMsg.getText(), fileIn.readLine());		
 			}

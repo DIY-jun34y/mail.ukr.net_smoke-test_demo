@@ -1,207 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="18" passed="17">
+<testng-results skipped="0" failed="1" total="22" passed="21">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokeTest" duration-ms="98406" started-at="2015-09-13T22:45:20Z" finished-at="2015-09-13T22:46:59Z">
+  <suite name="SmokeTest" duration-ms="114594" started-at="2015-09-16T19:22:03Z" finished-at="2015-09-16T19:23:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="98406" started-at="2015-09-13T22:45:20Z" finished-at="2015-09-13T22:46:59Z">
+    <test name="SmokeTest-Firefox" duration-ms="114594" started-at="2015-09-16T19:22:03Z" finished-at="2015-09-16T19:23:57Z">
       <class name="tests.Test_Functional_Main">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="setup" is-config="true" duration-ms="16" started-at="2015-09-14T01:45:34Z" finished-at="2015-09-14T01:45:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="setup" is-config="true" duration-ms="16" started-at="2015-09-16T22:22:26Z" finished-at="2015-09-16T22:22:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:34Z" finished-at="2015-09-14T01:45:34Z">
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:26Z" finished-at="2015-09-16T22:22:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_CreateMessage()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_CreateMessage" duration-ms="6687" started-at="2015-09-14T01:45:34Z" description="As a User I can create a message(it&#039;s stored in Drafts automatically)" finished-at="2015-09-14T01:45:41Z">
+        <test-method status="PASS" signature="test_CreateMessage()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_CreateMessage" duration-ms="7219" started-at="2015-09-16T22:22:26Z" description="As a User I can create a message(it&#039;s stored in Drafts automatically)" finished-at="2015-09-16T22:22:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_CreateMessage -->
-        <test-method status="PASS" signature="test_SendMessage()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_SendMessage" duration-ms="16094" started-at="2015-09-14T01:45:41Z" description="As a User I can send a message (it&#039;s stored in Sent automatically)" finished-at="2015-09-14T01:45:57Z">
+        <test-method status="PASS" signature="test_SendMessage()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_SendMessage" duration-ms="16312" started-at="2015-09-16T22:22:33Z" description="As a User I can send a message (it&#039;s stored in Sent automatically)" finished-at="2015-09-16T22:22:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_SendMessage -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:41Z" finished-at="2015-09-14T01:45:41Z">
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:33Z" finished-at="2015-09-16T22:22:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:57Z" finished-at="2015-09-14T01:45:57Z">
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:49Z" finished-at="2015-09-16T22:22:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_OpenInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_OpenInboxMessage" duration-ms="4500" started-at="2015-09-14T01:45:57Z" description="As a User I can open inbox message from list" finished-at="2015-09-14T01:46:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_OpenInboxMessage -->
-        <test-method status="PASS" signature="test_ReplyToMessage()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_ReplyToMessage" duration-ms="10172" started-at="2015-09-14T01:46:01Z" description="As a User I can reply to inbox message" finished-at="2015-09-14T01:46:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ReplyToMessage -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:01Z" finished-at="2015-09-14T01:46:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_ForwardInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_ForwardInboxMessage" duration-ms="8469" started-at="2015-09-14T01:46:11Z" description="As a User I can forward inbox message" finished-at="2015-09-14T01:46:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_ForwardInboxMessage -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:11Z" finished-at="2015-09-14T01:46:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:20Z" finished-at="2015-09-14T01:46:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Read_And_Move_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_Read_And_Move_ToTrash" duration-ms="4625" started-at="2015-09-14T01:46:20Z" description="As a User I can move opened Inbox message to Trash immediately)" finished-at="2015-09-14T01:46:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Read_And_Move_ToTrash -->
-        <test-method status="PASS" signature="test_Move_FromInboxList_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_Move_FromInboxList_ToTrash" duration-ms="3437" started-at="2015-09-14T01:46:25Z" description="As a User I can move a message to Trash from Inbox-list " finished-at="2015-09-14T01:46:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Move_FromInboxList_ToTrash -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:25Z" finished-at="2015-09-14T01:46:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Recover_FromTrashList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_Recover_FromTrashList_ToInbox" duration-ms="4203" started-at="2015-09-14T01:46:28Z" description="As a User I can recover message from Trash back to Inbox" finished-at="2015-09-14T01:46:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Recover_FromTrashList_ToInbox -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:28Z" finished-at="2015-09-14T01:46:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:32Z" finished-at="2015-09-14T01:46:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Move_FromInboxList_ToSpam()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_Move_FromInboxList_ToSpam" duration-ms="3641" started-at="2015-09-14T01:46:32Z" description="As a User I can move a message to Spam directly from Inbox" finished-at="2015-09-14T01:46:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Move_FromInboxList_ToSpam -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:36Z" finished-at="2015-09-14T01:46:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Recover_FromSpamList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_Recover_FromSpamList_ToInbox" duration-ms="3750" started-at="2015-09-14T01:46:36Z" description="As a User I can recover message from Spam folder (back to Inbox)" finished-at="2015-09-14T01:46:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Recover_FromSpamList_ToInbox -->
-        <test-method status="PASS" signature="test_DragAndDrop_InboxToSpam()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_DragAndDrop_InboxToSpam" duration-ms="5812" started-at="2015-09-14T01:46:40Z" description="As a User I can drag-n-drop selected message from Inbox to Spam folder)" finished-at="2015-09-14T01:46:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_DragAndDrop_InboxToSpam -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:40Z" finished-at="2015-09-14T01:46:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Send_With_Attachment()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="test_Send_With_Attachment" duration-ms="13250" started-at="2015-09-14T01:46:45Z" finished-at="2015-09-14T01:46:59Z">
+        <test-method status="PASS" signature="test_Send_With_Attachment()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_Send_With_Attachment" duration-ms="14328" started-at="2015-09-16T22:22:49Z" finished-at="2015-09-16T22:23:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Send_With_Attachment -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1a5ff38]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:46:45Z" finished-at="2015-09-14T01:46:45Z">
+        <test-method status="PASS" signature="test_OpenInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_OpenInboxMessage" duration-ms="4907" started-at="2015-09-16T22:23:04Z" description="As a User I can open inbox message from list" finished-at="2015-09-16T22:23:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_OpenInboxMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:04Z" finished-at="2015-09-16T22:23:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:09Z" finished-at="2015-09-16T22:23:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_ReplyToMessage()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_ReplyToMessage" duration-ms="9718" started-at="2015-09-16T22:23:09Z" description="As a User I can reply to inbox message" finished-at="2015-09-16T22:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ReplyToMessage -->
+        <test-method status="PASS" signature="test_ForwardInboxMessage()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_ForwardInboxMessage" duration-ms="8313" started-at="2015-09-16T22:23:18Z" description="As a User I can forward inbox message" finished-at="2015-09-16T22:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ForwardInboxMessage -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:18Z" finished-at="2015-09-16T22:23:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:27Z" finished-at="2015-09-16T22:23:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_Read_And_Move_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_Read_And_Move_ToTrash" duration-ms="4641" started-at="2015-09-16T22:23:27Z" description="As a User I can move opened Inbox message to Trash immediately)" finished-at="2015-09-16T22:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Read_And_Move_ToTrash -->
+        <test-method status="PASS" signature="test_Move_FromInboxList_ToTrash()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_Move_FromInboxList_ToTrash" duration-ms="4875" started-at="2015-09-16T22:23:31Z" description="As a User I can move a message to Trash from Inbox-list " finished-at="2015-09-16T22:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Move_FromInboxList_ToTrash -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:31Z" finished-at="2015-09-16T22:23:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_Recover_FromTrashList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_Recover_FromTrashList_ToInbox" duration-ms="5890" started-at="2015-09-16T22:23:36Z" description="As a User I can recover message from Trash back to Inbox" finished-at="2015-09-16T22:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Recover_FromTrashList_ToInbox -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:36Z" finished-at="2015-09-16T22:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_Move_FromInboxList_ToSpam()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_Move_FromInboxList_ToSpam" duration-ms="4610" started-at="2015-09-16T22:23:42Z" description="As a User I can move a message to Spam directly from Inbox" finished-at="2015-09-16T22:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Move_FromInboxList_ToSpam -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:42Z" finished-at="2015-09-16T22:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:47Z" finished-at="2015-09-16T22:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_Recover_FromSpamList_ToInbox()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_Recover_FromSpamList_ToInbox" duration-ms="4750" started-at="2015-09-16T22:23:47Z" description="As a User I can recover message from Spam folder (back to Inbox)" finished-at="2015-09-16T22:23:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Recover_FromSpamList_ToInbox -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:23:51Z" finished-at="2015-09-16T22:23:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_DragAndDrop_InboxToSpam()[pri:0, instance:tests.Test_Functional_Main@1ef8f5]" name="test_DragAndDrop_InboxToSpam" duration-ms="5875" started-at="2015-09-16T22:23:51Z" description="As a User I can drag-n-drop selected message from Inbox to Spam folder)" finished-at="2015-09-16T22:23:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_DragAndDrop_InboxToSpam -->
       </class> <!-- tests.Test_Functional_Main -->
       <class name="tests.Test_Login">
-        <test-method status="PASS" signature="setupDriver(java.lang.String)[pri:0, instance:tests.Test_Login@1fa12f6]" name="setupDriver" is-config="true" duration-ms="3969" started-at="2015-09-14T01:45:16Z" finished-at="2015-09-14T01:45:20Z">
+        <test-method status="PASS" signature="setupDriver(java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Login@194d431]" name="setupDriver" is-config="true" duration-ms="3594" started-at="2015-09-16T22:21:59Z" finished-at="2015-09-16T22:22:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Login@1fa12f6]" name="setup" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:28Z" finished-at="2015-09-14T01:45:28Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Login@194d431]" name="setup" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:13Z" finished-at="2015-09-16T22:22:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@1fa12f6]" name="test_Login" duration-ms="4000" started-at="2015-09-14T01:45:28Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-14T01:45:32Z">
+        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Login@194d431]" name="test_Login" duration-ms="4250" started-at="2015-09-16T22:22:13Z" data-provider="loginData" finished-at="2015-09-16T22:22:17Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[tester0667804531]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[p455word]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="3">
               <value>
                 <![CDATA[Valid credentials]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@1fa12f6]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:28Z" finished-at="2015-09-14T01:45:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@1fa12f6]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:32Z" finished-at="2015-09-14T01:45:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@1fa12f6]" name="test_Login" duration-ms="1031" started-at="2015-09-14T01:45:32Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-14T01:45:33Z">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
                 <![CDATA[tester0667804531]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrong_pass]]>
-              </value>
-            </param>
             <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Неверно указан логин или пароль. Подробнее]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login -->
-        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.Boolean, java.lang.String)[pri:0, instance:tests.Test_Login@1fa12f6]" name="test_Login" duration-ms="1000" started-at="2015-09-14T01:45:33Z" description="As a User I can login only with valid credentials" data-provider="login" finished-at="2015-09-14T01:45:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wrong_login_name]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[p455word]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Login -->
+        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Login@194d431]" name="test_Login" duration-ms="984" started-at="2015-09-16T22:22:17Z" data-provider="loginData" finished-at="2015-09-16T22:22:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrong_Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tester0667804531]]>
+              </value>
+            </param>
             <param index="2">
+              <value>
+                <![CDATA[wrong_pass]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[false]]>
               </value>
             </param>
-            <param index="3">
+            <param index="4">
               <value>
                 <![CDATA[Неверно указан логин или пароль. Подробнее]]>
               </value>
@@ -210,78 +191,246 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Login -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Login@1fa12f6]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:33Z" finished-at="2015-09-14T01:45:33Z">
+        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Login@194d431]" name="test_Login" duration-ms="969" started-at="2015-09-16T22:22:18Z" data-provider="loginData" finished-at="2015-09-16T22:22:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Wrong_Login_name]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_login_name]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[p455word]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Неверно указан логин или пароль. Подробнее]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:tests.Test_Login@1fa12f6]" name="tearDownSuite" is-config="true" duration-ms="500" started-at="2015-09-14T01:46:59Z" finished-at="2015-09-14T01:46:59Z">
+        </test-method> <!-- test_Login -->
+        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Login@194d431]" name="test_Login" duration-ms="3516" started-at="2015-09-16T22:22:19Z" data-provider="loginData" finished-at="2015-09-16T22:22:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Trailing space - login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tester0667804531 ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[p455word]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Login -->
+        <test-method status="PASS" signature="test_Login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Login@194d431]" name="test_Login" duration-ms="3343" started-at="2015-09-16T22:22:22Z" data-provider="loginData" finished-at="2015-09-16T22:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Trailing space - pass]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tester0667804531]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[p455word ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Login -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:tests.Test_Login@194d431]" name="tearDownSuite" is-config="true" duration-ms="531" started-at="2015-09-16T22:23:57Z" finished-at="2015-09-16T22:23:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
       </class> <!-- tests.Test_Login -->
       <class name="tests.Test_Registration">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Registration@1a4f43e]" name="setup" is-config="true" duration-ms="31" started-at="2015-09-14T01:45:20Z" finished-at="2015-09-14T01:45:20Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.Test_Registration@96ed8b]" name="setup" is-config="true" duration-ms="31" started-at="2015-09-16T22:22:03Z" finished-at="2015-09-16T22:22:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testCheckRegistrationLinks()[pri:0, instance:tests.Test_Registration@1a4f43e]" name="testCheckRegistrationLinks" duration-ms="2235" started-at="2015-09-14T01:45:20Z" description="Checking registration links on the login page" finished-at="2015-09-14T01:45:22Z">
+        <test-method status="PASS" signature="test_CheckRegistrationLinks()[pri:0, instance:tests.Test_Registration@96ed8b]" name="test_CheckRegistrationLinks" duration-ms="5328" started-at="2015-09-16T22:22:03Z" description="Checking registration links on the login page" finished-at="2015-09-16T22:22:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCheckRegistrationLinks -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@1a4f43e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:20Z" finished-at="2015-09-14T01:45:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="testRegPageEmptyFieldsErrorHandling()[pri:0, instance:tests.Test_Registration@1a4f43e]" name="testRegPageEmptyFieldsErrorHandling" duration-ms="968" started-at="2015-09-14T01:45:22Z" description="Checking error messages on the Registration page - &#039;Empty fields&#039;" finished-at="2015-09-14T01:45:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegPageEmptyFieldsErrorHandling -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@1a4f43e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:22Z" finished-at="2015-09-14T01:45:22Z">
+        </test-method> <!-- test_CheckRegistrationLinks -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@96ed8b]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:03Z" finished-at="2015-09-16T22:22:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSoftAssertObject -->
-        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@1a4f43e]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-14T01:45:23Z" finished-at="2015-09-14T01:45:23Z">
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@96ed8b]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:08Z" finished-at="2015-09-16T22:22:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newSoftAssertObject -->
-        <test-method status="FAIL" signature="testRegistration()[pri:0, instance:tests.Test_Registration@1a4f43e]" name="testRegistration" duration-ms="4469" started-at="2015-09-14T01:45:23Z" description="(Un)Successful registration" finished-at="2015-09-14T01:45:28Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="test_RegPage_EmptyFieldsErrorHandling(java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Registration@96ed8b]" name="test_RegPage_EmptyFieldsErrorHandling" duration-ms="875" started-at="2015-09-16T22:22:08Z" description="Checking error messages on the Registration page - &#039;Empty fields&#039; case" data-provider="regEmptyFieldsErrorMessages" finished-at="2015-09-16T22:22:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RU]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/test/java/helpers/emptyErrorMsgRU.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_RegPage_EmptyFieldsErrorHandling -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@96ed8b]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:09Z" finished-at="2015-09-16T22:22:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_RegPage_EmptyFieldsErrorHandling(java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Registration@96ed8b]" name="test_RegPage_EmptyFieldsErrorHandling" duration-ms="922" started-at="2015-09-16T22:22:09Z" description="Checking error messages on the Registration page - &#039;Empty fields&#039; case" data-provider="regEmptyFieldsErrorMessages" finished-at="2015-09-16T22:22:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[UA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/test/java/helpers/emptyErrorMsgUA.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_RegPage_EmptyFieldsErrorHandling -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@96ed8b]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:10Z" finished-at="2015-09-16T22:22:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
+        <test-method status="PASS" signature="test_RegPage_EmptyFieldsErrorHandling(java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Registration@96ed8b]" name="test_RegPage_EmptyFieldsErrorHandling" duration-ms="1109" started-at="2015-09-16T22:22:10Z" description="Checking error messages on the Registration page - &#039;Empty fields&#039; case" data-provider="regEmptyFieldsErrorMessages" finished-at="2015-09-16T22:22:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ENG]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[src/test/java/helpers/emptyErrorMsgENG.txt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_RegPage_EmptyFieldsErrorHandling -->
+        <test-method status="FAIL" signature="test_Registration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.Test_Registration@96ed8b]" name="test_Registration" duration-ms="1578" started-at="2015-09-16T22:22:11Z" description="(Un)Successful registration - CAPCHA!" data-provider="regData" finished-at="2015-09-16T22:22:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Entry - 
+Cyrillic]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[newuser99]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password99]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[имя]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[фамилия]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[F]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1951]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0930000000]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[email@email.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: {"method":"css selector","selector":".signup-done__view>button"}
-Command duration or timeout: 3.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
-*** Element info: {Using=css selector, value=.signup-done__view>button}
-Session ID: c82f45c0-a3a7-4b8d-a689-b4ec4c937718
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]]]>
+              <![CDATA[The following asserts failed:
+expected [Регистрация выполнена успешно] but found [Регистрация]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".signup-done__view>button"}
-Command duration or timeout: 3.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
-*** Element info: {Using=css selector, value=.signup-done__view>button}
-Session ID: c82f45c0-a3a7-4b8d-a689-b4ec4c937718
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:437)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at tests.Test_Registration.testRegistration(Test_Registration.java:65)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Регистрация выполнена успешно] but found [Регистрация]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at tests.Test_Registration.test_Registration(Test_Registration.java:65)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -306,20 +455,17 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".signup-done__view>button"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
-System info: host: 'mib-84a305b9628', ip: '192.168.1.10', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.7.0_80'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///J:/Temp/anonymous7080056401716269257webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10667)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///J:/Temp/anonymous7080056401716269257webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegistration -->
+        </test-method> <!-- test_Registration -->
+        <test-method status="PASS" signature="newSoftAssertObject()[pri:0, instance:tests.Test_Registration@96ed8b]" name="newSoftAssertObject" is-config="true" duration-ms="0" started-at="2015-09-16T22:22:11Z" finished-at="2015-09-16T22:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newSoftAssertObject -->
       </class> <!-- tests.Test_Registration -->
-    </test> <!-- Test -->
+    </test> <!-- SmokeTest-Firefox -->
   </suite> <!-- SmokeTest -->
 </testng-results>

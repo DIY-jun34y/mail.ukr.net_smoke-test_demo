@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import helpers.BaseClass;
-import helpers.TestData;
+import helpers.TestDataProvider;
 import pages.Login;
 import pages.Navigation;
 
@@ -22,12 +22,7 @@ public class Test_Login extends BaseClass{
 		login = new Login();
 		navigation = new Navigation();
 	}
-	
-	@BeforeMethod
-	public void newSoftAssertObject(){
-		this.sa = new SoftAssert();			
-	}
-				
+					
 	public boolean loggedIn(){
 		String pageTitle = driver.getTitle();
 		if (pageTitle.contains(validLogin+"@ukr.net")) {
@@ -37,12 +32,22 @@ public class Test_Login extends BaseClass{
 		}		
 	}	
 	
-	@Test(description = "As a User I can login only with valid credentials", dataProvider = "login", dataProviderClass =	TestData.class)	
-	public void test_Login(String account, String password, Boolean state, String errorMsg) {
-		login.load().setLanguage("RU").loginAs(account, password);
-		sa.assertTrue(loggedIn()==state);
-		if (!loggedIn()) {sa.assertEquals(login.loginErrorMsg.getText(), errorMsg);}		
-		else {navigation.logout();}
+	@Test(dataProvider = "loginData", dataProviderClass = TestDataProvider.class)	
+	public void test_Login(String testCase,String account,String password,String status,String errorMsg){	
+		login
+		.load()
+		.setLanguage("RU")
+		.loginAs(account, password);
+		
+		this.sa = new SoftAssert();
+		sa.assertEquals(loggedIn()+"", status);		
+		
+		if (loggedIn()) {			
+			navigation.logout();
+		}else {			
+			sa.assertEquals(login.loginErrorMsg.getText(), errorMsg);
+		}
 		sa.assertAll();
-	}		
+	}	
+	
 }

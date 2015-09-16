@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [SmokeTest]">
+  <parameter name="clearCookies" value="false"/>
+  <parameter name="browserType" value="firefox"/>
+  <test name="Firefox(failed)">
+    <parameter name="clearCookies" value="false"/>
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="tests.Test_Login">
+        <methods>
+          <include name="tearDownSuite"/>
+          <include name="test_Login"/>
+          <include name="setup"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- tests.Test_Login -->
+      <class name="tests.Test_Functional_Main">
+        <methods>
+          <include name="test_ReplyToMessage"/>
+          <include name="newSoftAssertObject"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.Test_Functional_Main -->
+      <class name="tests.Test_Registration">
+        <methods>
+          <include name="setup"/>
+          <include name="newSoftAssertObject"/>
+          <include name="testRegistration"/>
+        </methods>
+      </class> <!-- tests.Test_Registration -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [SmokeTest] -->

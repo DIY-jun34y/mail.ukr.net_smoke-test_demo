@@ -8,8 +8,8 @@
           <include name="tearDownSuite"/>
           <include name="setup"/>
           <include name="newSoftAssertObject"/>
+          <include name="test_Registration" invocation-numbers="0"/>
           <include name="setupDriver"/>
-          <include name="testRegistration"/>
         </methods>
       </class> <!-- tests.Test_Registration -->
     </classes>

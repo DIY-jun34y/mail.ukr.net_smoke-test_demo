@@ -71,9 +71,8 @@ public class Navigation extends BaseClass {
 	}
 			
 	public void logout(){		
-		hoover(profileMenu).click();;
-		implicitlyWait(3);
-		logoutLink.click();		
+		hoover(profileMenu).click();
+		logoutLink.click();	
 	}
 
 }

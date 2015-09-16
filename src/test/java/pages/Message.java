@@ -69,12 +69,12 @@ public class Message extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public Message to(String string){
+	public Message to(String string){		
 		toField.sendKeys(string);	
 		return this;
 	}
 	
-	public Message subject(String string){
+	public Message subject(String string){		
 		subjectField.sendKeys(string);
 		return this;
 	}
@@ -115,7 +115,7 @@ public class Message extends BaseClass{
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
-		Thread.sleep(1500);
+		Thread.sleep(2000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);		
 		wait.until(ExpectedConditions.visibilityOf(attachmentIcon));

@@ -2,9 +2,12 @@ package pages;
 
 import helpers.BaseClass;
 import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class Registration extends BaseClass{
 	
@@ -20,14 +23,13 @@ public class Registration extends BaseClass{
 	@FindBy (css = "[name~=\"name\"]") public WebElement fNameField;
 	@FindBy (css = "[name~=\"surname\"]") public WebElement surNameField;
 	
-	@FindBy (css = "[class~=\"radio\"]") public WebElement genderMale;
-	@FindBy (css = "[value~=\"F\"]") public WebElement genderFemale;
+	@FindBy (xpath = "//form/section[1]/div[4]/label[1]") public WebElement genderMale;
+	@FindBy (xpath = "//form/section[1]/div[4]/label[2]") public WebElement genderFemale;
 	
 	@FindBy (css = "[name~=\"year\"]") public WebElement bYear;
 	@FindBy (css = "[name~=\"day\"]") public WebElement bDay;
 	@FindBy (css = "[name~=\"month\"]") public WebElement bMonthList;
-	@FindBy (css = "[data-month~=\"12\"]") public WebElement bMonth;
-		
+			
 	@FindBy (css = "[name~=\"mobile\"]") public WebElement mobileNumber;
 	@FindBy (css = "[name~=\"email\"]") public WebElement email;
 	
@@ -62,7 +64,7 @@ public class Registration extends BaseClass{
 		return this;
 	}	
 	
-	public Registration setUsername(String string) {
+	public Registration setLoginName(String string) {
 		loginField.sendKeys(string);
 		return this;
 	}
@@ -98,8 +100,14 @@ public class Registration extends BaseClass{
 		bDay.sendKeys(day);
 		bYear.sendKeys(year);
 		bMonthList.click();
-		bMonth.click();
+		driver.findElement(By.xpath("//form/section[2]/div/div[1]/div[4]/div/a["+month+"]")).click();
 		return this;
+	}
+	
+	//Standard method doesn't work due to wrong tag <label> instead of <select> 
+	public void selectBMonth(String value){
+		Select select = new Select(bMonthList);
+		select.selectByValue(value);
 	}
 			
 	public Registration setMobile(String string){
@@ -111,5 +119,13 @@ public class Registration extends BaseClass{
 		email.sendKeys(string);
 		return this;
 	}
-
+	
+	public Registration setCapcha(String string){
+		capcha.sendKeys(string);
+		return this;
+	}
+	
+	public void submit(){
+		submitBtn.click();		
+	}
 }

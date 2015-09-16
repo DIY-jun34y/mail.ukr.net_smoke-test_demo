@@ -15,12 +15,13 @@ public abstract class BaseClass {
 	}	
 	*/	
 	
-	@Parameters({"browserType"})
+	@Parameters({"browserType", "clearCookies"})
 	@BeforeSuite
-	public void setupDriver(@Optional("Firefox") String browserType){
+	public static void setupDriver(@Optional("Firefox") String browserType, @Optional("false") String clearCookies){
 		if (driver==null){
 			driver = DriverOptions.getDriver(browserType);	
 			driver.manage().window().maximize();
+			if (clearCookies.equalsIgnoreCase("true")) driver.manage().deleteAllCookies();
 			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		}		
 	}	
@@ -34,9 +35,14 @@ public abstract class BaseClass {
 	 	driver.get(url);		
 	}
 	
-	public WebElement hoover(WebElement element){
+	public WebElement hoover(WebElement element) {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).build().perform();
+		try {
+			Thread.sleep(700);
+		} catch (InterruptedException e) {			
+			e.printStackTrace();
+		}
 		return element;
 	}
 	
