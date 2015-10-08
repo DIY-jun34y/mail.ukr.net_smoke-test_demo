@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.gargoylesoftware.htmlunit.WebClient;
 
@@ -21,7 +23,10 @@ public abstract class DriverOptions {
 				break;
 			case "htmlunit":
 				driver = newHtmlUnitDriver();
-				break;			
+				break;
+			case "phantomjs":
+				driver = newPhantomJSDriver();
+				break;		
 			default:
 				driver = newFirefoxDriver();		
 		}		
@@ -29,7 +34,6 @@ public abstract class DriverOptions {
 	}
 	
 	private static WebDriver newHtmlUnitDriver() {
-		//((HtmlUnitDriver) driver).setJavascriptEnabled(true);
 		WebDriver driver = new HtmlUnitDriver(true){
 		@Override
         protected WebClient getWebClient() {
@@ -39,6 +43,12 @@ public abstract class DriverOptions {
 			}
 		};
 		return driver;
+	}
+	
+	private static PhantomJSDriver newPhantomJSDriver() {		
+		DesiredCapabilities phantomCap = DesiredCapabilities.phantomjs();
+		phantomCap.setCapability("phantomjs.binary.path", "Q:\\eclipse\\phantomjs.exe");
+		return new PhantomJSDriver(phantomCap);
 	}
 
 	//if Firefox installed to non-default location:

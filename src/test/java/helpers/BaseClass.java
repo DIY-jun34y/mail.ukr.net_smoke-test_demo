@@ -17,7 +17,7 @@ public abstract class BaseClass {
 	
 	@Parameters({"browserType", "clearCookies"})
 	@BeforeSuite
-	public static void setupDriver(@Optional("Firefox") String browserType, @Optional("false") String clearCookies){
+	public static void setupDriver(@Optional("firefox") String browserType, @Optional("false") String clearCookies){
 		if (driver==null){
 			driver = DriverOptions.getDriver(browserType);	
 			driver.manage().window().maximize();

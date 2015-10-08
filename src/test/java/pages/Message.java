@@ -48,7 +48,7 @@ public class Message extends BaseClass{
 	@FindBy (css = ".sendmsg__attachments-edisk-files.action") public WebElement addEDiskFileBtn ;	//Добавить файл из еДиск
 	@FindBy (css = ".sendmsg__attachment-preview") public WebElement attachmentIcon;	//Иконка добавленного файла
 	@FindBy (css = ".attachment__foot-name") public WebElement attachmentName;  //Имя файла вложения
-	@FindBy (css = ".sendmsg__ads-ready") public WebElement sentOK; //Блок сообщения об успешной отправке письма 
+	@FindBy (css = ".sendmsg__ads-ready") public WebElement sentSuccessful; //Блок сообщения об успешной отправке письма 
 		
 	
 	@FindBy (css = ".sendmsg__form-label-copies.cc") public WebElement  copyToLink;			//Показать поле "Копия"
@@ -64,25 +64,9 @@ public class Message extends BaseClass{
 	@FindBy (css = ".editor__area") public WebElement bodyEditor;			//Вводимый текст письма
 		
 		
-		
 	public Message(){
 		PageFactory.initElements(driver, this);
-	}
-	
-	public Message to(String string){		
-		toField.sendKeys(string);	
-		return this;
-	}
-	
-	public Message subject(String string){		
-		subjectField.sendKeys(string);
-		return this;
-	}
-	
-	public Message setBodyText(String string){
-		bodyEditor.sendKeys(string);
-		return this;
-	}
+	}	
 	
 	public Message reply(){
 		replyBtn.click();
@@ -100,9 +84,9 @@ public class Message extends BaseClass{
 	}
 	
 	public void send(){
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		sendBtn.click();
-		wait.until(ExpectedConditions.visibilityOf(sentOK));		
+		wait.until(ExpectedConditions.visibilityOf(sentSuccessful));		
 	}	
 
 	public Message addLocalFile(String abs_path) throws Exception{		
@@ -110,15 +94,31 @@ public class Message extends BaseClass{
 		StringSelection str = new StringSelection(abs_path);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 		addLocalFileBtn.click();
+		Thread.sleep(1000);
 		Robot robot = new Robot(){};
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);		
 		wait.until(ExpectedConditions.visibilityOf(attachmentIcon));
 		return this;
-	}	
+	}
+	
+	public Message setTo(String string){		
+		toField.sendKeys(string);	
+		return this;
+	}
+	
+	public Message setSubject(String string){		
+		subjectField.sendKeys(string);
+		return this;
+	}
+	
+	public Message setBodyText(String string){
+		bodyEditor.sendKeys(string);
+		return this;
+	}
 }

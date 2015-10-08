@@ -13,7 +13,9 @@ public class Folder extends BaseClass{
 	@FindBy (css = ".search>input") public WebElement searchBox;		//Поле поиска
 
 	//Message list select options
-	@FindBy (css = ".msglist__checkbox") public WebElement msglistCheckbox;			//Чекбокс выбора писем:
+	@FindBy (xpath =".//*[@id='msglist']/div[1]/div[2]/div[1]/label") public WebElement msgListSelectAll; 
+	
+	@FindBy (css = ".msglist__checkbox") public WebElement msgSelectOptions;			//Чекбокс выбора писем:
 	@FindBy (css = "[data-select~=\"all\"]") public WebElement msgSelectAll;			//Все
 	@FindBy (css = "[data-select~=\"unread\"]") public WebElement msgSelectUnread;		//Непрочитанные
 	@FindBy (css = "[data-select~=\"read\"]") public WebElement msgSelectRead;			//Прочитанные
@@ -37,6 +39,7 @@ public class Folder extends BaseClass{
 	public String msgId;
 	public String msgDate;
 	public String msgSubj;
+	public String msgBody;
 		
 	public Folder(){
 		PageFactory.initElements(driver, this);			
@@ -50,7 +53,7 @@ public class Folder extends BaseClass{
 		msgToSpam.click();		
 	}
 	
-	public void ItIsNotSpam() {
+	public void itIsNotSpam() {
 		msgToSpam.click();		
 	}
 
@@ -59,13 +62,13 @@ public class Folder extends BaseClass{
 		hoover(toInbox).click();
 	}
 	
-	public Folder selectAll(){
-		hoover(msglistCheckbox).click();
+	public Folder selectAll() {
+		hoover(msgListSelectAll).click();		
 		return this;
 	}
 	
 	public void clearAll(){
-		hoover(msglistCheckbox).click();
+		hoover(msgListSelectAll).click();
 		msgDelete.click();
 	}
 	
@@ -77,8 +80,8 @@ public class Folder extends BaseClass{
 		driver.findElement(By.cssSelector("[href*=\""+message_id.substring(3)+"\"]")).click();
 	}
 	
-	public void openMsgWithSubject(String subj){
-		try {
+	public void openMsgWithSubject(String subj){		
+		 try {		 
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -106,6 +109,7 @@ public class Folder extends BaseClass{
 		driver.findElement(By.xpath("//section/table/tbody/tr["+n+"]/td[4]/a")).click();
 		msgDate = driver.findElement(By.cssSelector(".readmsg__head-date")).getText();
 		msgSubj = driver.findElement(By.cssSelector(".readmsg__subject")).getText();		
+		msgBody = driver.findElement(By.cssSelector(".readmsg__body")).getText();
 	}
 	
 }

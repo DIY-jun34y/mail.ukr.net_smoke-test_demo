@@ -3,8 +3,11 @@ package tests;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
+import java.util.List;
+
 import pages.*;
 import helpers.BaseClass;
+import static helpers.TestDataProvider.get_db_inboxList;
 import static tests.Test_Login.validLogin;
 import static tests.Test_Login.validPass;
 
@@ -35,15 +38,31 @@ public class Test_Functional_Main extends BaseClass{
 		sent = new Folder();
 		spam = new Folder();
 		trash = new Folder();		
-		message = new Message();	
+		message = new Message();
+		loginWithValidData();
 	}	
 		
 	@BeforeMethod
-	public void newSoftAssertObject(){
-		this.sa = new SoftAssert();			
+	public void beforeMethod(){
+		this.sa = new SoftAssert();		
+	}
+	
+	/*@AfterMethod
+	public void afterMethod(){		
+	}*/	
+	
+	@AfterClass()
+	public void clean_All_Folders() {
+		loginWithValidData();
+		navigation.goToInbox().selectAll().moveItToTrash();
+		navigation.goToDrafts().selectAll().moveItToTrash();
+		navigation.goToSent().selectAll().moveItToTrash();
+		navigation.goToSpam().selectAll().moveItToTrash();
+		navigation.goToTrash().clearAll();
+		navigation.logout();
 	}
 			
-	private boolean loggedIn(){
+	private boolean isLoggedIn(){
 		String pageTitle = driver.getTitle();
 		if (pageTitle.contains(validLogin+"@ukr.net")) {
 			return true;
@@ -54,144 +73,149 @@ public class Test_Functional_Main extends BaseClass{
 	
 	private void loginWithValidData() {
 		login.load();
-		if (loggedIn()) {
+		if (isLoggedIn()) {
 			return;
 		} else {
 			login.loginAs(validLogin, validPass);
 		}				
 	}
-	
-	private void setMessage(String subj, String bodyText) {
-		message
-		.to(validLogin+"@ukr.net")
-		.subject(subj)
-		.setBodyText(bodyText);				
-	}	
-			
-	@Test(description = "As a User I can create a message(it's stored in Drafts automatically)")
+				
+	@Test(priority = 0, description = "As a User I can create a message(it's stored in Drafts automatically)")
 	public void test_CreateMessage() {
-		loginWithValidData();
 		navigation.newMessage();
-		setMessage(testSubj,sampleText);		
-		navigation.goToDrafts().openMsgWithSubject(testSubj);		
+		message.setTo(validLogin+"@ukr.net").setSubject(testSubj).setBodyText(sampleText);		
+		navigation.goToDrafts().openMsgWithSubject(testSubj);
 		sa.assertEquals(message.bodyEditor.getText(), sampleText,"Mismatch between actual and draft bodytext!");
-		navigation.logout();
 		sa.assertAll();
 	}	
 	 		
-	@Test (description = "As a User I can send a message (it's stored in Sent automatically)")
-	public void test_SendMessage() {
-		loginWithValidData();
+	@Test (priority = 1, description = "As a User I can send a message (it's stored in Sent automatically)")
+	public void test_SendMessage() {		
+		navigation.goToInbox();
 		for (int i=1; i<4; i++){
-			navigation.newMessage();
-			setMessage(testSubj+"-"+i,sampleText);
+			navigation.newMessage();			
+			message.setTo(validLogin+"@ukr.net").setSubject(testSubj+"-"+i).setBodyText(sampleText);
 			message.send();
 		}
 		navigation.goToSent().openMsgWithSubject(testSubj);		
-		sa.assertEquals(message.body.getText(), sampleText,"Mismatch between actual and sent bodytext!");
-		navigation.logout();
+		sa.assertEquals(message.body.getText(), sampleText,"Mismatch between actual and sent bodytext!");		
 		sa.assertAll();
 		
-	}	
+	}
 	
-	@Test (description = "As a User I can open inbox message from list")//, dependsOnMethods = "testSendMessage")
-	public void test_OpenInboxMessage() {
-		loginWithValidData();
+	@Test(priority = 2, description = "Check if Inbox message list is consistent with Database")
+	public void test_Compare_InboxList_to_DB() throws Exception {	
+		navigation.goToInbox();		
+		List<String> subjList = get_db_inboxList();
+		for (int i=0; i< subjList.size(); i++){
+			sa.assertTrue(inbox.msgList.get(i).getText().contains(subjList.get(i)));					
+		}
+		sa.assertTrue(inbox.msgList.size()==subjList.size(),"Number of messages in 'Inbox' not equal to DB");
+		sa.assertAll();	
+	}	
+
+	
+	@Test(priority = 3, description = "As a User I can send a message with attachment file")
+	public void test_Send_With_Attachment() throws Exception {		
+		navigation.newMessage();		
+		message.setTo(validLogin+"@ukr.net").setSubject("test_Send_With_Attachment").setBodyText(sampleText);		
+		message.addLocalFile(attachmentPath).send();
+		
+		navigation.goToSent();
+		sent.openMsgWithSubject("test_Send_With_Attachment");
+		sa.assertEquals(message.attachmentName.getText(), attachmentName);
+		
+		navigation.goToInbox();
+		sent.openMsgWithSubject("test_Send_With_Attachment");
+		sa.assertEquals(message.attachmentName.getText(), attachmentName);		
+		sa.assertAll();		
+	}
+	
+	@Test (priority = 4, description = "As a User I can open inbox message from list")
+	public void test_OpenInboxMessage() {		
 		navigation.goToInbox().openMsgWithSubject(testSubj);		
-		sa.assertEquals(message.body.getText(), sampleText,"Text mismatch between sent/inbox message body!");
-		navigation.logout();
+		sa.assertEquals(message.body.getText(), sampleText,"Text mismatch between sent/inbox message body!");		
 		sa.assertAll();
 	}	
 	
-	@Test (description = "As a User I can reply to inbox message")//, dependsOnMethods = "testOpenInboxMessage")
-	public void test_ReplyToMessage() {
-		loginWithValidData();
-		navigation.goToInbox().openMsgWithSubject(testSubj);			
+	@Test (priority = 4, description = "As a User I can reply to inbox message")
+	public void test_ReplyToMessage() {		
+		navigation.goToInbox();
+		inbox.openAnyFromList();					
 		message.reply().setBodyText(replyText).send();
 		
-		navigation.goToSent().openMsgWithSubject("Re: "+testSubj);			
-		sa.assertTrue(message.body.getText().contains(replyText),"Reply text is not found inside Re: message!");
+		navigation.goToSent().openMsgWithSubject("Re: "+inbox.msgSubj);			
+		sa.assertTrue(message.body.getText().contains(replyText),"Reply text is not found inside Re: message![Sent folder]");
 		
-		navigation.goToInbox().openMsgWithSubject("Re: "+testSubj);			
-		sa.assertTrue(message.body.getText().contains(replyText),"Reply text is not found inside Re: message!");		
-		navigation.logout();
+		navigation.goToInbox().openMsgWithSubject("Re: "+inbox.msgSubj);			
+		sa.assertTrue(message.body.getText().contains(replyText),"Reply text is not found inside Re: message![Inbox folder]");		
 		sa.assertAll();
 	}
 
-	@Test (description = "As a User I can forward inbox message")//, dependsOnMethods = "testOpenInboxMessage")
-	public void test_ForwardInboxMessage() {
-		loginWithValidData();
-		navigation.goToInbox().openMsgWithSubject(testSubj);				
-		String bodyText = message.body.getText();
-		
+	@Test (priority = 4, description = "As a User I can forward inbox message")
+	public void test_ForwardInboxMessage() {		
+		navigation.goToInbox();		
+		inbox.openAnyFromList();		
 		message.forwardTo(validLogin+"@ukr.net").send();
-		navigation.goToSent().openMsgWithSubject("Fw: "+testSubj);
 		
-		sa.assertTrue(message.body.getText().contains(bodyText), "Original text is not found inside Forwarded message!");
-		navigation.logout();
+		navigation.goToSent().openMsgWithSubject("Fw: "+inbox.msgSubj);		
+		sa.assertTrue(message.body.getText().contains(inbox.msgBody), "Original text is not found inside Forwarded message! [Sent folder]");
+		
+		navigation.goToInbox().openMsgWithSubject("Fw: "+inbox.msgSubj);
+		sa.assertTrue(message.body.getText().contains(inbox.msgBody), "Original text is not found inside Forwarded message! [Inbox folder]");
+		
 		sa.assertAll();
 	}
 	
-	@Test (description = "As a User I can move opened Inbox message to Trash immediately)")//, dependsOnMethods = "testForwardMessage")
-	public void test_Read_And_Move_ToTrash() {
-		loginWithValidData();
+	@Test (priority = 4, description = "As a User I can move opened Inbox message to Trash immediately)")
+	public void test_Read_And_Move_ToTrash() {		
 		navigation.goToInbox();
 		inbox.openAnyFromList();	
 		message.moveToTrash();
 		navigation.goToTrash();
 		trash.openMessageWithId(inbox.msgId);
-		sa.assertEquals(message.subject.getText(), inbox.msgSubj,"Mismatch of Subject in original/deleted message!");
-		navigation.logout();
+		sa.assertEquals(message.subject.getText(), inbox.msgSubj,"Mismatch of Subject in original/deleted message!");		
 		sa.assertAll();
 	}	
 		
-	@Test (description = "As a User I can move a message to Trash from Inbox-list ")//, dependsOnMethods = "")
+	@Test (priority = 4, description = "As a User I can move a message to Trash from Inbox-list ")
 	public void test_Move_FromInboxList_ToTrash() {
-		loginWithValidData();
 		navigation.goToInbox();
 		inbox.selectAnyFromList().moveItToTrash();				
 		navigation.goToTrash();
-		sa.assertTrue(trash.getMessageWithId(inbox.msgId).isDisplayed(), "Deleted message not found in Trash!");
-		navigation.logout();
+		sa.assertTrue(trash.getMessageWithId(inbox.msgId).isDisplayed(), "Deleted message not found in Trash!");		
 		sa.assertAll();
 	}
 	
-	@Test (description = "As a User I can recover message from Trash back to Inbox")//, dependsOnMethods = "testForwardMessage")
+	@Test (priority = 4, description = "As a User I can recover message from Trash back to Inbox")
 	public void test_Recover_FromTrashList_ToInbox() {
-		loginWithValidData();		
 		navigation.goToTrash();
 		trash.selectAnyFromList().moveItToInbox();				
 		navigation.goToInbox();
-		sa.assertTrue(inbox.getMessageWithId(trash.msgId).isDisplayed(), "Recovered message not found inside Inbox!");
-		navigation.logout();
+		sa.assertTrue(inbox.getMessageWithId(trash.msgId).isDisplayed(), "Recovered message not found inside Inbox!");		
 		sa.assertAll();
 	}
 		
-	@Test (description = "As a User I can move a message to Spam directly from Inbox")
+	@Test (priority = 4, description = "As a User I can move a message to Spam directly from Inbox")
 	public void test_Move_FromInboxList_ToSpam() {
-		loginWithValidData();
 		navigation.goToInbox();
 		inbox.selectAnyFromList().moveItToSpam();				
 		navigation.goToSpam();
 		sa.assertTrue(spam.getMessageWithId(inbox.msgId).isDisplayed(), "Moved message not found in Spam!");
-		navigation.logout();
 		sa.assertAll();
 	}
 	
-	@Test (description = "As a User I can recover message from Spam folder (back to Inbox)")
+	@Test (priority = 4, description = "As a User I can recover message from Spam folder (back to Inbox)")
 	public void test_Recover_FromSpamList_ToInbox() {
-		loginWithValidData();		
 		navigation.goToSpam();
-		spam.selectAnyFromList().ItIsNotSpam();				
+		spam.selectAnyFromList().itIsNotSpam();				
 		navigation.goToInbox();
 		sa.assertTrue(inbox.getMessageWithId(spam.msgId).isDisplayed(), "Recovered message not found inside Inbox!");
-		navigation.logout();
 		sa.assertAll();
 	}
 	
-	@Test (description = "As a User I can drag-n-drop selected message from Inbox to Spam folder)")
+	@Test (priority = 4, description = "As a User I can drag-n-drop selected message from Inbox to Spam folder)")
 	public void test_DragAndDrop_InboxToSpam() throws InterruptedException {
-		loginWithValidData();		
 		navigation.goToInbox();		
 		inbox.selectAnyFromList();
 		WebElement selected = inbox.getMessageWithId(inbox.msgId);
@@ -200,49 +224,13 @@ public class Test_Functional_Main extends BaseClass{
 		
 		navigation.goToSpam();
 		sa.assertTrue(spam.getMessageWithId(inbox.msgId).isDisplayed(), "drag-n-dropped message not found inside target folder!");
-		navigation.logout();
 		sa.assertAll();
-	}	
-	
-	@Test()
-	public void test_Send_With_Attachment() throws Exception {
-		loginWithValidData();
-		navigation.newMessage();
-		setMessage("test_Send_With_Attachment",sampleText);		
-		message.addLocalFile(attachmentPath).send();
-		navigation.goToSent();
-		sent.openMsgWithSubject("test_Send_With_Attachment");
-		sa.assertEquals(message.attachmentName.getText(), attachmentName);
-		
-		navigation.goToInbox();
-		sent.openMsgWithSubject("test_Send_With_Attachment");
-		sa.assertEquals(message.attachmentName.getText(), attachmentName);
-		
-		navigation.logout();
-		sa.assertAll();		
 	}
-
-	
 }
-	/*
-	 * 									  			
-					 <!-- include name=""/-->
-										
-					
-				  	<include name=""/>
-				  	<include name=""/>
-				  	<include name="testRegPageEmptyFieldsErrorHandling" />
-					<include name="testCheckRegistrationLinks"/>
-					<include name="testRegistration"/>
-					 <!-- include name=""/-->		
-				  
-	 */
 		
-	//prev-next message
-		
-//DB:
-	//As a User I can see a list of inbox messages
-	//As a User I can see a list of sent messages
 	
+	
+
+	//prev-next message	
 	//password recovery
-	//login in public place (no cookies)
+	//login in public place

@@ -35,12 +35,13 @@ public class Navigation extends BaseClass {
 	@FindBy (css = "[href*=\"filters\"]") public WebElement filtersLink;			//Фильтра
 	@FindBy (css = "[href*=\"protocols\"]") public WebElement mailProtocolsLink;	//Почтовые программы
 	@FindBy (css = "[href*=\"password\"]") public WebElement changePasswordLink;	//Смена пароля
-		
-					
+	
+	@FindBy (css = ".screen__head>h2") public WebElement manageFoldersHeader;	//Управление папками
+	
 	public Navigation(){		
 		PageFactory.initElements(driver, this);
 	}	
-	
+		
 	public Folder goToInbox(){
 		inboxLink.click();
 		return new Folder();

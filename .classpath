@@ -43,5 +43,7 @@
 	<classpathentry kind="lib" path="Q:/eclipse/ext-jars/poi-3.12/lib/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="Q:/eclipse/ext-jars/poi-3.12/lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="Q:/eclipse/ext-jars/poi-3.12/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="Q:/eclipse/ext-jars/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="Q:/eclipse/ext-jars/mysql-connector-java-5.1.35.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

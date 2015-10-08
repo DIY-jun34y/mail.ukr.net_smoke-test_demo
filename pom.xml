@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>mail.ukr.net-maven</groupId>
+  <groupId>mail.ukr.net</groupId>
   <artifactId>smoke-test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
@@ -19,7 +19,13 @@
   		<groupId>org.apache.poi</groupId>
   		<artifactId>poi</artifactId>  		
   		<version>3.12</version>
-  	</dependency>  	
+  	</dependency>
+  	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.35</version>
+	</dependency>
+	  	  	
   </dependencies>
   <build>
   <plugins>
